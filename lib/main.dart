@@ -1,3 +1,4 @@
+import 'package:figma_to_code_light/generated/components/main_screen/example.dart';
 import 'package:figma_to_code_light/theme/base_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       theme: appTheme,
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+      home: ExampleScreen(),
     );
   }
 }
