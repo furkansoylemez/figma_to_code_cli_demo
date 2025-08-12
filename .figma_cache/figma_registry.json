@@ -496,6 +496,25 @@
         "onTap"
       ],
       "description": "Badge / Text"
+    },
+    "user_info": {
+      "name": "user_info",
+      "figmaIds": [
+        "40000102:238"
+      ],
+      "filePath": "lib/generated/components/user_info/user_info.dart",
+      "generatedAt": "2025-08-12T13:05:16.798224",
+      "props": [
+        "userInitials",
+        "userName",
+        "jobTitle",
+        "statusText",
+        "isActive",
+        "avatarBackgroundColor",
+        "onTap",
+        "width"
+      ],
+      "description": "Custom component"
     }
   },
   "idToComponentMap": {
@@ -526,21 +545,20 @@
     "310:8104": "flexible_search_input",
     "647:28280": "flexible_search_input",
     "452:6145": "base_dropdown_button",
-    "674:6659": "base_badge"
+    "674:6659": "base_badge",
+    "40000102:238": "user_info"
   },
   "exampleScreens": {
     "main_screen": {
       "name": "main_screen",
       "figmaId": "40000070:4567",
       "filePath": "lib/generated/components/main_screen/example.dart",
-      "generatedAt": "2025-08-11T20:41:29.675326",
+      "generatedAt": "2025-08-12T13:05:56.845471",
       "usedComponents": [
         "base_dropdown_button",
         "tab_item",
         "tab_item",
-        "base_avatar",
-        "tag",
-        "base_badge",
+        "user_info",
         "auto_complete",
         "auto_complete",
         "tag",
@@ -551,5 +569,5 @@
       "description": ""
     }
   },
-  "lastUpdated": "2025-08-11T20:41:29.679132"
+  "lastUpdated": "2025-08-12T13:05:56.849440"
 }
