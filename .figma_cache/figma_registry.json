@@ -72,43 +72,6 @@
       ],
       "description": "Checkbox"
     },
-    "app_button": {
-      "name": "app_button",
-      "figmaIds": [
-        "713:13285",
-        "639:24822"
-      ],
-      "filePath": "lib/generated/components/app_button/app_button.dart",
-      "generatedAt": "2025-08-11T20:16:38.010564",
-      "props": [
-        "type",
-        "size",
-        "text",
-        "leadingIcon",
-        "trailingIcon",
-        "icon",
-        "showText",
-        "showLeadingIcon",
-        "showTrailingIcon",
-        "onPressed",
-        "backgroundColor",
-        "foregroundColor",
-        "disabledBackgroundColor",
-        "disabledForegroundColor",
-        "borderRadius",
-        "padding",
-        "iconSpacing",
-        "width",
-        "height",
-        "textStyle",
-        "iconSize",
-        "enabled",
-        "boxShadow",
-        "mainAxisAlignment",
-        "crossAxisAlignment"
-      ],
-      "description": "Button"
-    },
     "base_avatar": {
       "name": "base_avatar",
       "figmaIds": [
@@ -345,39 +308,6 @@
       ],
       "description": "AutoComplite"
     },
-    "base_switch": {
-      "name": "base_switch",
-      "figmaIds": [
-        "315:8187",
-        "639:23949",
-        "315:8654",
-        "315:8188"
-      ],
-      "filePath": "lib/generated/components/base_switch/base_switch.dart",
-      "generatedAt": "2025-08-11T20:29:14.465189",
-      "props": [
-        "value",
-        "onChanged",
-        "label",
-        "size",
-        "showLabel",
-        "activeTrackColor",
-        "inactiveTrackColor",
-        "thumbColor",
-        "labelColor",
-        "labelStyle",
-        "trackWidth",
-        "trackHeight",
-        "thumbSize",
-        "padding",
-        "borderRadius",
-        "thumbShadow",
-        "animationDuration",
-        "labelSpacing",
-        "alignment"
-      ],
-      "description": "Switch"
-    },
     "flexible_search_input": {
       "name": "flexible_search_input",
       "figmaIds": [
@@ -515,6 +445,117 @@
         "width"
       ],
       "description": "Custom component"
+    },
+    "base_button": {
+      "name": "base_button",
+      "figmaIds": [
+        "713:13285"
+      ],
+      "filePath": "lib/generated/components/base_button/base_button.dart",
+      "generatedAt": "2025-08-13T09:54:54.118304",
+      "props": [
+        "text",
+        "onPressed",
+        "iconLeft",
+        "iconRight",
+        "showIconLeft",
+        "showIconRight",
+        "showText",
+        "backgroundColor",
+        "foregroundColor",
+        "disabledBackgroundColor",
+        "disabledForegroundColor",
+        "textStyle",
+        "padding",
+        "borderRadius",
+        "iconSpacing",
+        "iconSize",
+        "minimumHeight",
+        "minimumWidth",
+        "style"
+      ],
+      "description": "Button/Primary/Large/False/False/Default/False/Default"
+    },
+    "base_floating_action_button": {
+      "name": "base_floating_action_button",
+      "figmaIds": [
+        "639:24822"
+      ],
+      "filePath": "lib/generated/components/base_floating_action_button/base_floating_action_button.dart",
+      "generatedAt": "2025-08-13T09:55:14.719857",
+      "props": [
+        "onPressed",
+        "icon",
+        "child",
+        "backgroundColor",
+        "foregroundColor",
+        "hoverColor",
+        "focusColor",
+        "splashColor",
+        "elevation",
+        "focusElevation",
+        "hoverElevation",
+        "highlightElevation",
+        "disabledElevation",
+        "mini",
+        "shape",
+        "clipBehavior",
+        "autofocus",
+        "materialTapTargetSize",
+        "isExtended",
+        "enableFeedback",
+        "mouseCursor",
+        "tooltip",
+        "heroTag",
+        "focusNode",
+        "size",
+        "iconSize",
+        "borderRadius",
+        "shadows"
+      ],
+      "description": "Float Button/Primery/Default/Default"
+    },
+    "base_toggle_switch": {
+      "name": "base_toggle_switch",
+      "figmaIds": [
+        "315:8187",
+        "639:23949",
+        "315:8654",
+        "315:8188"
+      ],
+      "filePath": "lib/generated/components/base_toggle_switch/base_toggle_switch.dart",
+      "generatedAt": "2025-08-13T10:05:30.458501",
+      "props": [
+        "value",
+        "onChanged",
+        "size",
+        "showLabel",
+        "labelText",
+        "activeTrackColor",
+        "inactiveTrackColor",
+        "activeThumbColor",
+        "inactiveThumbColor",
+        "labelStyle",
+        "labelColor",
+        "spacing",
+        "trackWidth",
+        "trackHeight",
+        "thumbRadius",
+        "elevation",
+        "shadows",
+        "materialTapTargetSize",
+        "mouseCursor",
+        "focusColor",
+        "hoverColor",
+        "overlayColor",
+        "splashRadius",
+        "focusNode",
+        "autofocus",
+        "thumbIcon",
+        "trackOutlineColor",
+        "trackOutlineWidth"
+      ],
+      "description": "Switch"
     }
   },
   "idToComponentMap": {
@@ -522,8 +563,6 @@
     "313:8490": "base_radio_button",
     "311:8277": "base_checkbox",
     "311:8276": "base_checkbox",
-    "713:13285": "app_button",
-    "639:24822": "app_button",
     "1002:172585": "base_avatar",
     "1002:172589": "base_avatar",
     "1002:172591": "base_avatar",
@@ -537,23 +576,25 @@
     "2201:5742": "pagination_control",
     "468:35072": "auto_complete",
     "648:7318": "auto_complete",
-    "315:8187": "base_switch",
-    "639:23949": "base_switch",
-    "315:8654": "base_switch",
-    "315:8188": "base_switch",
     "645:5573": "flexible_search_input",
     "310:8104": "flexible_search_input",
     "647:28280": "flexible_search_input",
     "452:6145": "base_dropdown_button",
     "674:6659": "base_badge",
-    "40000102:238": "user_info"
+    "40000102:238": "user_info",
+    "713:13285": "base_button",
+    "639:24822": "base_floating_action_button",
+    "315:8187": "base_toggle_switch",
+    "639:23949": "base_toggle_switch",
+    "315:8654": "base_toggle_switch",
+    "315:8188": "base_toggle_switch"
   },
   "exampleScreens": {
     "main_screen": {
       "name": "main_screen",
       "figmaId": "40000070:4567",
       "filePath": "lib/generated/components/main_screen/example.dart",
-      "generatedAt": "2025-08-12T13:05:56.845471",
+      "generatedAt": "2025-08-13T10:06:11.289875",
       "usedComponents": [
         "base_dropdown_button",
         "tab_item",
@@ -562,12 +603,13 @@
         "auto_complete",
         "auto_complete",
         "tag",
-        "base_switch",
+        "base_toggle_switch",
         "base_checkbox",
-        "app_button"
+        "base_button"
       ],
       "description": ""
     }
   },
-  "lastUpdated": "2025-08-12T13:05:56.849440"
+  "lastUpdated": "2025-08-13T10:06:11.292457",
+  "version": "1.0"
 }
