@@ -556,6 +556,47 @@
         "trackOutlineWidth"
       ],
       "description": "Switch"
+    },
+    "base_primary_button": {
+      "name": "base_primary_button",
+      "figmaIds": [
+        "10:2"
+      ],
+      "filePath": "lib/generated/components/base_primary_button/base_primary_button.dart",
+      "generatedAt": "2025-08-14T10:48:06.558018",
+      "props": [
+        "text",
+        "onPressed",
+        "width",
+        "height",
+        "backgroundColor",
+        "foregroundColor",
+        "disabledBackgroundColor",
+        "disabledForegroundColor",
+        "textStyle",
+        "padding",
+        "borderRadius",
+        "elevation",
+        "focusElevation",
+        "hoverElevation",
+        "highlightElevation",
+        "disabledElevation",
+        "shadowColor",
+        "surfaceTintColor",
+        "animationDuration",
+        "enableFeedback",
+        "autofocus",
+        "focusNode",
+        "onLongPress",
+        "onHover",
+        "onFocusChange",
+        "clipBehavior",
+        "icon",
+        "iconSize",
+        "iconAlignment",
+        "gap"
+      ],
+      "description": "button / primary"
     }
   },
   "idToComponentMap": {
@@ -587,14 +628,15 @@
     "315:8187": "base_toggle_switch",
     "639:23949": "base_toggle_switch",
     "315:8654": "base_toggle_switch",
-    "315:8188": "base_toggle_switch"
+    "315:8188": "base_toggle_switch",
+    "10:2": "base_primary_button"
   },
   "exampleScreens": {
     "main_screen": {
       "name": "main_screen",
       "figmaId": "40000070:4567",
       "filePath": "lib/generated/components/main_screen/example.dart",
-      "generatedAt": "2025-08-13T10:06:11.289875",
+      "generatedAt": "2025-08-14T10:48:46.943974",
       "usedComponents": [
         "base_dropdown_button",
         "tab_item",
@@ -610,6 +652,6 @@
       "description": ""
     }
   },
-  "lastUpdated": "2025-08-13T10:06:11.292457",
+  "lastUpdated": "2025-08-14T10:48:46.948393",
   "version": "1.0"
 }

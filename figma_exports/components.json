@@ -1,0 +1,117 @@
+[
+    {
+        "id": "10:2",
+        "name": "button / primary",
+        "type": "COMPONENT",
+        "x": -2791,
+        "y": -2886,
+        "width": 200,
+        "height": 50,
+        "visible": true,
+        "locked": false,
+        "opacity": 1,
+        "rotation": 0,
+        "blendMode": "PASS_THROUGH",
+        "effects": [],
+        "fills": [
+            {
+                "type": "SOLID",
+                "visible": false,
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1
+                },
+                "boundVariables": {}
+            }
+        ],
+        "strokes": [],
+        "strokeWeight": 1,
+        "strokeAlign": "INSIDE",
+        "cornerRadius": 0,
+        "description": "",
+        "documentationLinks": [],
+        "componentPropertyReferences": {},
+        "reactions": [],
+        "layoutMode": "NONE",
+        "primaryAxisSizingMode": "AUTO",
+        "counterAxisSizingMode": "FIXED",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "itemSpacing": 0,
+        "layoutGrow": 0,
+        "layoutAlign": "INHERIT",
+        "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MIN"
+        },
+        "absoluteTransform": [
+            [
+                1,
+                0,
+                -2791
+            ],
+            [
+                0,
+                1,
+                -2886
+            ]
+        ],
+        "relativeTransform": [
+            [
+                1,
+                0,
+                -2791
+            ],
+            [
+                0,
+                1,
+                -2886
+            ]
+        ],
+        "absoluteBoundingBox": {
+            "x": -2791,
+            "y": -2886,
+            "width": 200,
+            "height": 50
+        },
+        "absoluteRenderBounds": {
+            "x": -2791,
+            "y": -2886,
+            "width": 200,
+            "height": 50
+        },
+        "minWidth": null,
+        "maxWidth": null,
+        "minHeight": null,
+        "maxHeight": null,
+        "isMask": false,
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER",
+        "dashPattern": [],
+        "cornerSmoothing": 0,
+        "children": [
+            {
+                "id": "10:0",
+                "name": "Rectangle 2",
+                "type": "RECTANGLE"
+            },
+            {
+                "id": "10:1",
+                "name": "Button",
+                "type": "TEXT"
+            }
+        ],
+        "parent": {
+            "id": "1:25",
+            "name": "Figma Component Examples",
+            "type": "PAGE"
+        }
+    }
+]
