@@ -1,214 +1,201 @@
 import 'package:flutter/material.dart';
 
-/// A base primary button component that extends Material Design's ElevatedButton
-/// with additional customization options for component libraries.
+/// A customizable primary button component that wraps Material's ElevatedButton
+/// with additional styling options and consistent theming capabilities.
 class BasePrimaryButton extends StatelessWidget {
   /// Creates a base primary button.
+  ///
+  /// The [text] parameter is required and specifies the button's label.
+  /// The [onPressed] callback is called when the button is tapped.
   const BasePrimaryButton({
     super.key,
     required this.text,
     this.onPressed,
-    this.width,
-    this.height = 50.0,
     this.backgroundColor,
     this.foregroundColor,
     this.disabledBackgroundColor,
     this.disabledForegroundColor,
-    this.textStyle,
-    this.padding,
-    this.borderRadius,
     this.elevation,
-    this.focusElevation,
-    this.hoverElevation,
-    this.highlightElevation,
+    this.pressedElevation,
     this.disabledElevation,
     this.shadowColor,
     this.surfaceTintColor,
-    this.animationDuration,
+    this.padding,
+    this.minimumSize,
+    this.maximumSize,
+    this.borderRadius,
+    this.borderSide,
+    this.textStyle,
+    this.alignment,
+    this.splashFactory,
     this.enableFeedback = true,
     this.autofocus = false,
+    this.clipBehavior = Clip.none,
     this.focusNode,
-    this.onLongPress,
     this.onHover,
     this.onFocusChange,
-    this.clipBehavior = Clip.none,
-    this.icon,
-    this.iconSize,
-    this.iconAlignment = IconAlignment.start,
-    this.gap,
+    this.onLongPress,
+    this.mouseCursor,
+    this.visualDensity,
+    this.tapTargetSize,
+    this.animationDuration,
+    this.enabledFeedback,
+    this.overlayColor,
   });
 
-  /// The text to display on the button.
+  /// The text displayed on the button.
   final String text;
 
   /// Called when the button is tapped or otherwise activated.
   final VoidCallback? onPressed;
 
-  /// The width of the button. If null, the button will size itself to its content.
-  final double? width;
-
-  /// The height of the button. Defaults to 50.0 to match Material Design standards.
-  final double height;
-
-  /// The background color of the button.
-  /// Defaults to Theme.of(context).colorScheme.primary.
+  /// The button's background color.
+  /// Defaults to [ColorScheme.primary] from the current theme.
   final Color? backgroundColor;
 
-  /// The foreground color of the button (text and icon color).
-  /// Defaults to Theme.of(context).colorScheme.onPrimary.
+  /// The button's foreground color (text and icon color).
+  /// Defaults to [ColorScheme.onPrimary] from the current theme.
   final Color? foregroundColor;
 
-  /// The background color of the button when disabled.
-  /// Defaults to Theme.of(context).colorScheme.onSurface.withOpacity(0.12).
+  /// The button's background color when disabled.
   final Color? disabledBackgroundColor;
 
-  /// The foreground color of the button when disabled.
-  /// Defaults to Theme.of(context).colorScheme.onSurface.withOpacity(0.38).
+  /// The button's foreground color when disabled.
   final Color? disabledForegroundColor;
 
-  /// The text style for the button text.
-  /// Defaults to Theme.of(context).textTheme.labelLarge.
-  final TextStyle? textStyle;
-
-  /// The internal padding of the button.
-  /// Defaults to EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0).
-  final EdgeInsetsGeometry? padding;
-
-  /// The border radius of the button.
-  /// Defaults to BorderRadius.circular(4.0) for Material Design compliance.
-  final BorderRadius? borderRadius;
-
-  /// The elevation of the button.
+  /// The elevation of the button's [Material].
   final double? elevation;
 
-  /// The elevation of the button when focused.
-  final double? focusElevation;
+  /// The elevation of the button's [Material] when pressed.
+  final double? pressedElevation;
 
-  /// The elevation of the button when hovered.
-  final double? hoverElevation;
-
-  /// The elevation of the button when pressed.
-  final double? highlightElevation;
-
-  /// The elevation of the button when disabled.
+  /// The elevation of the button's [Material] when disabled.
   final double? disabledElevation;
 
-  /// The color of the button's shadow.
+  /// The shadow color of the button's [Material].
   final Color? shadowColor;
 
-  /// The surface tint color of the button.
+  /// The surface tint color of the button's [Material].
   final Color? surfaceTintColor;
 
-  /// The duration of the button's animation.
-  final Duration? animationDuration;
+  /// The internal padding for the button's child.
+  /// Defaults to Material Design standard button padding.
+  final EdgeInsetsGeometry? padding;
 
-  /// Whether the button should provide haptic feedback.
+  /// The minimum size of the button.
+  /// Defaults to Material Design minimum tap target size.
+  final Size? minimumSize;
+
+  /// The maximum size of the button.
+  final Size? maximumSize;
+
+  /// The border radius of the button.
+  /// Defaults to Material Design standard border radius.
+  final BorderRadius? borderRadius;
+
+  /// The border side of the button.
+  final BorderSide? borderSide;
+
+  /// The text style for the button's text.
+  /// Defaults to [TextTheme.labelLarge] from the current theme.
+  final TextStyle? textStyle;
+
+  /// The alignment of the button's child.
+  final AlignmentGeometry? alignment;
+
+  /// The splash factory for the button's [InkWell].
+  final InteractiveInkFeatureFactory? splashFactory;
+
+  /// Whether detected gestures should provide acoustic and/or haptic feedback.
   final bool enableFeedback;
 
-  /// Whether the button should be focused initially.
+  /// Whether this button should focus itself if nothing else is already focused.
   final bool autofocus;
 
-  /// The focus node for the button.
+  /// The content will be clipped (or not) according to this option.
+  final Clip clipBehavior;
+
+  /// An optional focus node to use as the focus node for this widget.
   final FocusNode? focusNode;
+
+  /// Called when a pointer enters or exits the button response area.
+  final ValueChanged<bool>? onHover;
+
+  /// Called when the focus changes.
+  final ValueChanged<bool>? onFocusChange;
 
   /// Called when the button is long-pressed.
   final VoidCallback? onLongPress;
 
-  /// Called when the button is hovered.
-  final ValueChanged<bool>? onHover;
+  /// The cursor for a mouse pointer when it enters or is hovering over the button.
+  final MouseCursor? mouseCursor;
 
-  /// Called when the focus state of the button changes.
-  final ValueChanged<bool>? onFocusChange;
+  /// Defines how compact the button's layout will be.
+  final VisualDensity? visualDensity;
 
-  /// The clipping behavior of the button.
-  final Clip clipBehavior;
+  /// Configures the minimum size of the tap target.
+  final MaterialTapTargetSize? tapTargetSize;
 
-  /// An optional icon to display on the button.
-  final Widget? icon;
+  /// The animation duration for the button's elevation changes.
+  final Duration? animationDuration;
 
-  /// The size of the icon. If null, uses the default icon size.
-  final double? iconSize;
+  /// Whether detected gestures should provide feedback.
+  final bool? enabledFeedback;
 
-  /// The alignment of the icon relative to the text.
-  final IconAlignment iconAlignment;
-
-  /// The gap between the icon and text. If null, uses Material Design default.
-  final double? gap;
+  /// The overlay color of the button's [InkWell].
+  final Color? overlayColor;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
 
-    final buttonStyle = ElevatedButton.styleFrom(
-      backgroundColor: backgroundColor ?? colorScheme.primary,
-      foregroundColor: foregroundColor ?? colorScheme.onPrimary,
-      disabledBackgroundColor:
-          disabledBackgroundColor ?? colorScheme.onSurface.withOpacity(0.12),
-      disabledForegroundColor:
-          disabledForegroundColor ?? colorScheme.onSurface.withOpacity(0.38),
-      textStyle: textStyle ?? theme.textTheme.labelLarge,
-      padding:
-          padding ??
-          const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
-      shape: RoundedRectangleBorder(
-        borderRadius: borderRadius ?? BorderRadius.circular(4.0),
-      ),
-      elevation: elevation,
-      shadowColor: shadowColor,
-      surfaceTintColor: surfaceTintColor,
-      animationDuration: animationDuration,
-      enableFeedback: enableFeedback,
-      fixedSize: Size(width ?? double.infinity, height),
-      minimumSize: Size(width ?? 64.0, height),
-    );
-
-    Widget buttonChild = Text(text);
-
-    if (icon != null) {
-      buttonChild = icon is Icon
-          ? Icon((icon as Icon).icon, size: iconSize ?? (icon as Icon).size)
-          : icon!;
-
-      if (iconAlignment == IconAlignment.start) {
-        buttonChild = Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            buttonChild,
-            SizedBox(width: gap ?? 8.0),
-            Text(text),
-          ],
-        );
-      } else {
-        buttonChild = Row(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(text),
-            SizedBox(width: gap ?? 8.0),
-            buttonChild,
-          ],
-        );
-      }
-    }
-
-    Widget button = ElevatedButton(
+    return ElevatedButton(
       onPressed: onPressed,
-      onLongPress: onLongPress,
-      onHover: onHover,
-      onFocusChange: onFocusChange,
-      style: buttonStyle,
-      focusNode: focusNode,
+      style:
+          ElevatedButton.styleFrom(
+            backgroundColor: backgroundColor ?? colorScheme.primary,
+            foregroundColor: foregroundColor ?? colorScheme.onPrimary,
+            disabledBackgroundColor: disabledBackgroundColor,
+            disabledForegroundColor: disabledForegroundColor,
+            elevation: elevation,
+            shadowColor: shadowColor,
+            surfaceTintColor: surfaceTintColor,
+            padding:
+                padding ??
+                const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            minimumSize: minimumSize ?? const Size(64, 48),
+            maximumSize: maximumSize,
+            shape: RoundedRectangleBorder(
+              borderRadius: borderRadius ?? BorderRadius.circular(8),
+              side: borderSide ?? BorderSide.none,
+            ),
+            textStyle: textStyle ?? theme.textTheme.labelLarge,
+            alignment: alignment,
+            splashFactory: splashFactory,
+            enableFeedback: enableFeedback,
+            visualDensity: visualDensity,
+            tapTargetSize: tapTargetSize,
+            animationDuration: animationDuration,
+            overlayColor: overlayColor,
+          ).copyWith(
+            elevation: MaterialStateProperty.resolveWith((states) {
+              if (states.contains(MaterialState.disabled)) {
+                return disabledElevation;
+              }
+              if (states.contains(MaterialState.pressed)) {
+                return pressedElevation;
+              }
+              return elevation;
+            }),
+          ),
       autofocus: autofocus,
       clipBehavior: clipBehavior,
-      child: buttonChild,
+      focusNode: focusNode,
+      onHover: onHover,
+      onFocusChange: onFocusChange,
+      onLongPress: onLongPress,
+      child: Text(text, textAlign: TextAlign.center),
     );
-
-    if (width != null) {
-      return SizedBox(width: width, height: height, child: button);
-    }
-
-    return button;
   }
 }
