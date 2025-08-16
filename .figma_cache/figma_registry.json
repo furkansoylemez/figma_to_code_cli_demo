@@ -556,49 +556,6 @@
         "trackOutlineWidth"
       ],
       "description": "Switch"
-    },
-    "base_primary_button": {
-      "name": "base_primary_button",
-      "figmaIds": [
-        "10:2"
-      ],
-      "filePath": "lib/generated/components/base_primary_button/base_primary_button.dart",
-      "generatedAt": "2025-08-14T17:08:02.011198",
-      "props": [
-        "text",
-        "onPressed",
-        "backgroundColor",
-        "foregroundColor",
-        "disabledBackgroundColor",
-        "disabledForegroundColor",
-        "elevation",
-        "pressedElevation",
-        "disabledElevation",
-        "shadowColor",
-        "surfaceTintColor",
-        "padding",
-        "minimumSize",
-        "maximumSize",
-        "borderRadius",
-        "borderSide",
-        "textStyle",
-        "alignment",
-        "splashFactory",
-        "enableFeedback",
-        "autofocus",
-        "clipBehavior",
-        "focusNode",
-        "onHover",
-        "onFocusChange",
-        "onLongPress",
-        "mouseCursor",
-        "visualDensity",
-        "tapTargetSize",
-        "animationDuration",
-        "enabledFeedback",
-        "overlayColor"
-      ],
-      "description": "button / primary"
     }
   },
   "idToComponentMap": {
@@ -630,8 +587,7 @@
     "315:8187": "base_toggle_switch",
     "639:23949": "base_toggle_switch",
     "315:8654": "base_toggle_switch",
-    "315:8188": "base_toggle_switch",
-    "10:2": "base_primary_button"
+    "315:8188": "base_toggle_switch"
   },
   "exampleScreens": {
     "main_screen": {
@@ -654,6 +610,6 @@
       "description": ""
     }
   },
-  "lastUpdated": "2025-08-15T16:12:06.229553",
+  "lastUpdated": "2025-08-16T02:59:06.945638",
   "version": "1.0"
 }
