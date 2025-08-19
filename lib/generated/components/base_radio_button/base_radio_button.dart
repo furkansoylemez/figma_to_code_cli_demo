@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum RadioVariant {
-  active,
-  inactive,
-}
+enum RadioVariant { active, inactive }
 
 class BaseRadioButton extends StatelessWidget {
   const BaseRadioButton({
@@ -52,32 +49,42 @@ class BaseRadioButton extends StatelessWidget {
     final textTheme = theme.textTheme;
 
     final bool isActive = variant == RadioVariant.active;
-    
+
     final Color effectiveActiveColor = activeColor ?? colorScheme.primary;
     final Color effectiveInactiveColor = inactiveColor ?? colorScheme.outline;
-    final Color effectiveBackgroundColor = backgroundColor ?? colorScheme.surface;
-    final Color effectiveTextColor = textColor ?? colorScheme.onSurface.withOpacity(0.87);
-    
-    final Color borderColor = isActive ? effectiveActiveColor : effectiveInactiveColor;
-    final Color fillColor = isActive && isSelected ? effectiveActiveColor : effectiveBackgroundColor;
-    final Color innerDotColor = isActive && isSelected ? effectiveActiveColor : Colors.transparent;
-    
-    final TextStyle effectiveTextStyle = textStyle ?? textTheme.bodyMedium?.copyWith(
-      color: effectiveTextColor,
-      fontSize: 14.0,
-      fontWeight: FontWeight.w400,
-      height: 22.0 / 14.0,
-    ) ?? TextStyle(
-      color: effectiveTextColor,
-      fontSize: 14.0,
-      fontWeight: FontWeight.w400,
-      height: 22.0 / 14.0,
-    );
+    final Color effectiveBackgroundColor =
+        backgroundColor ?? colorScheme.surface;
+    final Color effectiveTextColor =
+        textColor ?? colorScheme.onSurface.withOpacity(0.87);
+
+    final Color borderColor = isActive
+        ? effectiveActiveColor
+        : effectiveInactiveColor;
+    final Color innerDotColor = isActive && isSelected
+        ? effectiveActiveColor
+        : Colors.transparent;
+
+    final TextStyle effectiveTextStyle =
+        textStyle ??
+        textTheme.bodyMedium?.copyWith(
+          color: effectiveTextColor,
+          fontSize: 14.0,
+          fontWeight: FontWeight.w400,
+          height: 22.0 / 14.0,
+        ) ??
+        TextStyle(
+          color: effectiveTextColor,
+          fontSize: 14.0,
+          fontWeight: FontWeight.w400,
+          height: 22.0 / 14.0,
+        );
 
     return Material(
       color: Colors.transparent,
       child: InkWell(
-        onTap: disabled || onChanged == null ? null : () => onChanged!(!isSelected),
+        onTap: disabled || onChanged == null
+            ? null
+            : () => onChanged!(!isSelected),
         borderRadius: BorderRadius.circular(4.0),
         child: Padding(
           padding: const EdgeInsets.all(4.0),
@@ -99,9 +106,9 @@ class BaseRadioButton extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: effectiveBackgroundColor,
                         border: Border.all(
-                          color: disabled 
-                            ? borderColor.withOpacity(0.38)
-                            : borderColor,
+                          color: disabled
+                              ? borderColor.withOpacity(0.38)
+                              : borderColor,
                           width: strokeWidth,
                         ),
                       ),
@@ -112,9 +119,9 @@ class BaseRadioButton extends StatelessWidget {
                         height: innerDotSize,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: disabled 
-                            ? innerDotColor.withOpacity(0.38)
-                            : innerDotColor,
+                          color: disabled
+                              ? innerDotColor.withOpacity(0.38)
+                              : innerDotColor,
                         ),
                       ),
                   ],
@@ -124,11 +131,11 @@ class BaseRadioButton extends StatelessWidget {
               Flexible(
                 child: Text(
                   label,
-                  style: disabled 
-                    ? effectiveTextStyle.copyWith(
-                        color: effectiveTextStyle.color?.withOpacity(0.38),
-                      )
-                    : effectiveTextStyle,
+                  style: disabled
+                      ? effectiveTextStyle.copyWith(
+                          color: effectiveTextStyle.color?.withOpacity(0.38),
+                        )
+                      : effectiveTextStyle,
                 ),
               ),
             ],

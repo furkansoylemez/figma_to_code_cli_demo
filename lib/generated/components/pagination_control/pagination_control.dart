@@ -82,25 +82,31 @@ class PaginationControl extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
-    
+
     final effectiveBackgroundColor = backgroundColor ?? Colors.transparent;
     final effectiveSurfaceColor = surfaceColor ?? colorScheme.surface;
     final effectiveBorderColor = borderColor ?? colorScheme.outline;
     final effectiveActiveColor = activeColor ?? colorScheme.primary;
     final effectiveInactiveColor = inactiveColor ?? Colors.transparent;
     final effectiveDisabledColor = disabledColor ?? Colors.transparent;
-    final effectiveTextColor = textColor ?? colorScheme.onSurface.withOpacity(0.88);
+    final effectiveTextColor =
+        textColor ?? colorScheme.onSurface.withOpacity(0.88);
     final effectiveActiveTextColor = activeTextColor ?? colorScheme.primary;
-    final effectiveInactiveTextColor = inactiveTextColor ?? colorScheme.onSurface.withOpacity(0.88);
-    final effectiveDisabledTextColor = disabledTextColor ?? colorScheme.onSurface.withOpacity(0.25);
-    
-    final effectiveItemsInfoTextStyle = itemsInfoTextStyle ?? theme.textTheme.bodySmall?.copyWith(
-      color: colorScheme.onSurface.withOpacity(0.65),
-    );
-    final effectivePageNumberTextStyle = pageNumberTextStyle ?? theme.textTheme.labelLarge;
-    final effectiveItemsPerPageTextStyle = itemsPerPageTextStyle ?? theme.textTheme.labelLarge?.copyWith(
-      fontWeight: FontWeight.w500,
-    );
+    final effectiveInactiveTextColor =
+        inactiveTextColor ?? colorScheme.onSurface.withOpacity(0.88);
+    final effectiveDisabledTextColor =
+        disabledTextColor ?? colorScheme.onSurface.withOpacity(0.25);
+
+    final effectiveItemsInfoTextStyle =
+        itemsInfoTextStyle ??
+        theme.textTheme.bodySmall?.copyWith(
+          color: colorScheme.onSurface.withOpacity(0.65),
+        );
+    final effectivePageNumberTextStyle =
+        pageNumberTextStyle ?? theme.textTheme.labelLarge;
+    final effectiveItemsPerPageTextStyle =
+        itemsPerPageTextStyle ??
+        theme.textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w500);
 
     return Container(
       padding: padding ?? const EdgeInsets.all(16.0),
@@ -109,39 +115,38 @@ class PaginationControl extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           if (showItemsInfo) _buildItemsInfo(effectiveItemsInfoTextStyle),
-          if (showPageNumbers) _buildPageNavigation(
-            context,
-            effectiveSurfaceColor,
-            effectiveBorderColor,
-            effectiveActiveColor,
-            effectiveInactiveColor,
-            effectiveDisabledColor,
-            effectiveActiveTextColor,
-            effectiveInactiveTextColor,
-            effectiveDisabledTextColor,
-            effectivePageNumberTextStyle,
-          ),
-          if (showItemsPerPageSelector) _buildItemsPerPageSelector(
-            context,
-            effectiveSurfaceColor,
-            effectiveBorderColor,
-            effectiveTextColor,
-            effectiveItemsPerPageTextStyle,
-          ),
+          if (showPageNumbers)
+            _buildPageNavigation(
+              context,
+              effectiveSurfaceColor,
+              effectiveBorderColor,
+              effectiveActiveColor,
+              effectiveInactiveColor,
+              effectiveDisabledColor,
+              effectiveActiveTextColor,
+              effectiveInactiveTextColor,
+              effectiveDisabledTextColor,
+              effectivePageNumberTextStyle,
+            ),
+          if (showItemsPerPageSelector)
+            _buildItemsPerPageSelector(
+              context,
+              effectiveSurfaceColor,
+              effectiveBorderColor,
+              effectiveTextColor,
+              effectiveItemsPerPageTextStyle,
+            ),
         ],
       ),
     );
   }
 
   Widget _buildItemsInfo(TextStyle? textStyle) {
-    final startItem = (currentPage - 1) * itemsPerPage + 1;
-    final endItem = (currentPage * itemsPerPage).clamp(0, totalItems);
-    final displayText = itemsDisplayText ?? '$totalItems veriden $itemsPerPage tanesi listeleniyor.';
-    
-    return Text(
-      displayText,
-      style: textStyle,
-    );
+    final displayText =
+        itemsDisplayText ??
+        '$totalItems veriden $itemsPerPage tanesi listeleniyor.';
+
+    return Text(displayText, style: textStyle);
   }
 
   Widget _buildPageNavigation(
@@ -181,7 +186,9 @@ class PaginationControl extends StatelessWidget {
           icon: nextIcon ?? const Icon(Icons.chevron_right, size: 14),
           onPressed: currentPage < totalPages ? onNextPressed : null,
           backgroundColor: inactiveColor,
-          textColor: currentPage < totalPages ? inactiveTextColor : disabledTextColor,
+          textColor: currentPage < totalPages
+              ? inactiveTextColor
+              : disabledTextColor,
         ),
       ],
     );
@@ -211,7 +218,7 @@ class PaginationControl extends StatelessWidget {
           borderColor: isActive ? activeColor : null,
         ),
       );
-      
+
       if (page < endPage) {
         pageNumbers.add(SizedBox(width: spacing));
       }
@@ -286,9 +293,7 @@ class PaginationControl extends StatelessWidget {
       children: [
         Text(
           '$itemsPerPage / ${totalPages}',
-          style: textStyle?.copyWith(
-            color: textColor.withOpacity(0.45),
-          ),
+          style: textStyle?.copyWith(color: textColor.withOpacity(0.45)),
         ),
         SizedBox(width: 16),
         Container(
@@ -311,7 +316,9 @@ class PaginationControl extends StatelessWidget {
               ),
               SizedBox(width: 8),
               Icon(
-                dropdownIcon?.key != null ? dropdownIcon as IconData? : Icons.keyboard_arrow_down,
+                dropdownIcon?.key != null
+                    ? dropdownIcon as IconData?
+                    : Icons.keyboard_arrow_down,
                 size: 16,
                 color: textColor,
               ),

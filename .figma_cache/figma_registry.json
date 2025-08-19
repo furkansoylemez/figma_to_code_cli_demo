@@ -427,55 +427,6 @@
       ],
       "description": "Badge / Text"
     },
-    "user_info": {
-      "name": "user_info",
-      "figmaIds": [
-        "40000102:238"
-      ],
-      "filePath": "lib/generated/components/user_info/user_info.dart",
-      "generatedAt": "2025-08-12T13:05:16.798224",
-      "props": [
-        "userInitials",
-        "userName",
-        "jobTitle",
-        "statusText",
-        "isActive",
-        "avatarBackgroundColor",
-        "onTap",
-        "width"
-      ],
-      "description": "Custom component"
-    },
-    "base_button": {
-      "name": "base_button",
-      "figmaIds": [
-        "713:13285"
-      ],
-      "filePath": "lib/generated/components/base_button/base_button.dart",
-      "generatedAt": "2025-08-13T09:54:54.118304",
-      "props": [
-        "text",
-        "onPressed",
-        "iconLeft",
-        "iconRight",
-        "showIconLeft",
-        "showIconRight",
-        "showText",
-        "backgroundColor",
-        "foregroundColor",
-        "disabledBackgroundColor",
-        "disabledForegroundColor",
-        "textStyle",
-        "padding",
-        "borderRadius",
-        "iconSpacing",
-        "iconSize",
-        "minimumHeight",
-        "minimumWidth",
-        "style"
-      ],
-      "description": "Button/Primary/Large/False/False/Default/False/Default"
-    },
     "base_floating_action_button": {
       "name": "base_floating_action_button",
       "figmaIds": [
@@ -581,34 +532,11 @@
     "647:28280": "flexible_search_input",
     "452:6145": "base_dropdown_button",
     "674:6659": "base_badge",
-    "40000102:238": "user_info",
-    "713:13285": "base_button",
     "639:24822": "base_floating_action_button",
     "315:8187": "base_toggle_switch",
     "639:23949": "base_toggle_switch",
     "315:8654": "base_toggle_switch",
     "315:8188": "base_toggle_switch"
-  },
-  "exampleScreens": {
-    "main_screen": {
-      "name": "main_screen",
-      "figmaId": "40000070:4567",
-      "filePath": "lib/generated/components/main_screen/example.dart",
-      "generatedAt": "2025-08-14T10:48:46.943974",
-      "usedComponents": [
-        "base_dropdown_button",
-        "tab_item",
-        "tab_item",
-        "user_info",
-        "auto_complete",
-        "auto_complete",
-        "tag",
-        "base_toggle_switch",
-        "base_checkbox",
-        "base_button"
-      ],
-      "description": ""
-    }
   },
   "lastUpdated": "2025-08-16T02:59:06.945638",
   "version": "1.0"

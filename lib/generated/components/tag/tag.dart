@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum TagVariant {
-  colorful,
-  close,
-  addNew,
-}
+enum TagVariant { colorful, close, addNew }
 
 class Tag extends StatelessWidget {
   final String text;
@@ -52,57 +48,63 @@ class Tag extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
-    
-    final effectiveBackgroundColor = backgroundColor ?? 
-        (variant == TagVariant.addNew ? Colors.transparent : colorScheme.surface.withOpacity(0.02));
-    
-    final effectiveBorderColor = borderColor ?? colorScheme.outline.withOpacity(0.24);
-    
-    final effectiveTextColor = textColor ?? 
-        colorScheme.onSurface.withOpacity(enabled ? 0.88 : 0.38);
-    
-    final effectiveIconColor = iconColor ?? 
-        colorScheme.onSurface.withOpacity(enabled ? 0.45 : 0.38);
-    
-    final effectiveTextStyle = textStyle ?? 
+
+    final effectiveBackgroundColor =
+        backgroundColor ??
+        (variant == TagVariant.addNew
+            ? Colors.transparent
+            : colorScheme.surface.withOpacity(0.02));
+
+    final effectiveBorderColor =
+        borderColor ?? colorScheme.outline.withOpacity(0.24);
+
+    final effectiveTextColor =
+        textColor ?? colorScheme.onSurface.withOpacity(enabled ? 0.88 : 0.38);
+
+    final effectiveIconColor =
+        iconColor ?? colorScheme.onSurface.withOpacity(enabled ? 0.45 : 0.38);
+
+    final effectiveTextStyle =
+        textStyle ??
         theme.textTheme.labelMedium?.copyWith(
           fontWeight: FontWeight.w500,
           color: effectiveTextColor,
         );
-    
-    final effectivePadding = padding ?? 
-        const EdgeInsets.symmetric(horizontal: 8.0, vertical: 1.0);
-    
+
+    final effectivePadding =
+        padding ?? const EdgeInsets.symmetric(horizontal: 8.0, vertical: 1.0);
+
     final effectiveSpacing = spacing ?? 4.0;
     final effectiveIconSize = iconSize ?? 12.0;
     final effectiveBorderRadius = borderRadius ?? 4.0;
     final effectiveBorderWidth = borderWidth ?? 1.0;
-    
+
     final shouldShowDashedBorder = isDashed || variant == TagVariant.addNew;
 
     Widget buildIcon() {
       switch (variant) {
         case TagVariant.close:
-          return trailingIcon ?? Icon(
-            Icons.close,
-            size: effectiveIconSize,
-            color: effectiveIconColor,
-          );
+          return trailingIcon ??
+              Icon(
+                Icons.close,
+                size: effectiveIconSize,
+                color: effectiveIconColor,
+              );
         case TagVariant.addNew:
-          return leadingIcon ?? Icon(
-            Icons.add,
-            size: effectiveIconSize,
-            color: effectiveIconColor,
-          );
+          return leadingIcon ??
+              Icon(
+                Icons.add,
+                size: effectiveIconSize,
+                color: effectiveIconColor,
+              );
         case TagVariant.colorful:
-        default:
           return const SizedBox.shrink();
       }
     }
 
     Widget buildContent() {
       final List<Widget> children = [];
-      
+
       if (variant == TagVariant.addNew && leadingIcon != null) {
         children.add(leadingIcon!);
         children.add(SizedBox(width: effectiveSpacing));
@@ -110,14 +112,9 @@ class Tag extends StatelessWidget {
         children.add(buildIcon());
         children.add(SizedBox(width: effectiveSpacing));
       }
-      
-      children.add(
-        Text(
-          text,
-          style: effectiveTextStyle,
-        ),
-      );
-      
+
+      children.add(Text(text, style: effectiveTextStyle));
+
       if (variant == TagVariant.close) {
         children.add(SizedBox(width: effectiveSpacing));
         if (trailingIcon != null) {
@@ -126,7 +123,7 @@ class Tag extends StatelessWidget {
           children.add(buildIcon());
         }
       }
-      
+
       return Row(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -175,9 +172,12 @@ class Tag extends StatelessWidget {
       );
     }
 
-    if (onPressed != null || (variant == TagVariant.close && onClosePressed != null)) {
+    if (onPressed != null ||
+        (variant == TagVariant.close && onClosePressed != null)) {
       return GestureDetector(
-        onTap: enabled ? (variant == TagVariant.close ? onClosePressed : onPressed) : null,
+        onTap: enabled
+            ? (variant == TagVariant.close ? onClosePressed : onPressed)
+            : null,
         child: MouseRegion(
           cursor: enabled ? SystemMouseCursors.click : SystemMouseCursors.basic,
           child: tagWidget,
@@ -218,27 +218,21 @@ class DashedBorderPainter extends CustomPainter {
       size.height - strokeWidth,
     );
 
-    final rrect = RRect.fromRectAndRadius(
-      rect,
-      Radius.circular(borderRadius),
-    );
+    final rrect = RRect.fromRectAndRadius(rect, Radius.circular(borderRadius));
 
     final path = Path()..addRRect(rrect);
-    
+
     _drawDashedPath(canvas, path, paint);
   }
 
   void _drawDashedPath(Canvas canvas, Path path, Paint paint) {
     final pathMetrics = path.computeMetrics();
-    
+
     for (final pathMetric in pathMetrics) {
       double distance = 0.0;
-      
+
       while (distance < pathMetric.length) {
-        final segment = pathMetric.extractPath(
-          distance,
-          distance + dashWidth,
-        );
+        final segment = pathMetric.extractPath(distance, distance + dashWidth);
         canvas.drawPath(segment, paint);
         distance += dashWidth + dashSpace;
       }
@@ -263,12 +257,6 @@ class DashedBorderPainter extends CustomPainter {
 
   @override
   int get hashCode {
-    return Object.hash(
-      color,
-      strokeWidth,
-      borderRadius,
-      dashWidth,
-      dashSpace,
-    );
+    return Object.hash(color, strokeWidth, borderRadius, dashWidth, dashSpace);
   }
 }

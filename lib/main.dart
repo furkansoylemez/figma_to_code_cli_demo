@@ -1,5 +1,3 @@
-import 'package:figma_to_code_light/generated/components/main_screen/example.dart';
-import 'package:figma_to_code_light/theme/base_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,10 +9,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: appTheme,
-      debugShowCheckedModeBanner: false,
-      home: ExampleScreen(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Scaffold());
   }
 }

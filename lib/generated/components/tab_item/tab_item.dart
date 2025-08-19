@@ -79,7 +79,6 @@ class TabItem extends StatelessWidget {
         case TabItemState.hover:
           return effectiveHoverColor;
         case TabItemState.defaultState:
-        default:
           return effectiveDefaultColor;
       }
     }
@@ -90,7 +89,6 @@ class TabItem extends StatelessWidget {
           return colorScheme.onSurface.withOpacity(0.03);
         case TabItemState.active:
         case TabItemState.defaultState:
-        default:
           return null;
       }
     }
@@ -101,7 +99,6 @@ class TabItem extends StatelessWidget {
           return badgeBackgroundColor ?? effectiveActiveColor;
         case TabItemState.hover:
         case TabItemState.defaultState:
-        default:
           return badgeBackgroundColor ??
               colorScheme.onSurface.withOpacity(0.06);
       }
@@ -113,7 +110,6 @@ class TabItem extends StatelessWidget {
           return badgeTextColor ?? colorScheme.onPrimary;
         case TabItemState.hover:
         case TabItemState.defaultState:
-        default:
           return badgeTextColor ?? effectiveDefaultColor;
       }
     }

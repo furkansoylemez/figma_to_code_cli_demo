@@ -3,127 +3,127 @@ import 'package:flutter/material.dart';
 class AutoComplete extends StatelessWidget {
   /// Whether the autocomplete dropdown is currently open
   final bool isOpen;
-  
+
   /// The text value in the input field
   final String value;
-  
+
   /// The label text for the input field
   final String label;
-  
+
   /// The placeholder text when input is empty
   final String? placeholder;
-  
+
   /// List of autocomplete options to display
   final List<String> options;
-  
+
   /// The currently selected/highlighted option index
   final int? selectedOptionIndex;
-  
+
   /// Whether to show the left icon
   final bool showLeftIcon;
-  
+
   /// The left icon widget
   final Widget? leftIcon;
-  
+
   /// Whether to show the right icon
   final bool showRightIcon;
-  
+
   /// The right icon widget
   final Widget? rightIcon;
-  
+
   /// Whether the input field is focused
   final bool isFocused;
-  
+
   /// Whether the input field is enabled
   final bool enabled;
-  
+
   /// Callback when the input text changes
   final ValueChanged<String>? onChanged;
-  
+
   /// Callback when an option is selected
   final ValueChanged<String>? onOptionSelected;
-  
+
   /// Callback when the input field is tapped
   final VoidCallback? onTap;
-  
+
   /// Callback when the input field gains focus
   final VoidCallback? onFocusChanged;
-  
+
   /// Width of the component
   final double? width;
-  
+
   /// Height of the input field
   final double inputHeight;
-  
+
   /// Maximum height of the dropdown
   final double? maxDropdownHeight;
-  
+
   /// Border radius for both input and dropdown
   final double borderRadius;
-  
+
   /// Border radius for dropdown items
   final double itemBorderRadius;
-  
+
   /// Padding inside the input field
   final EdgeInsetsGeometry inputPadding;
-  
+
   /// Padding inside the dropdown
   final EdgeInsetsGeometry dropdownPadding;
-  
+
   /// Padding inside dropdown items
   final EdgeInsetsGeometry itemPadding;
-  
+
   /// Spacing between elements in input field
   final double inputItemSpacing;
-  
+
   /// Spacing between dropdown and input
   final double dropdownSpacing;
-  
+
   /// Background color of the input field
   final Color? backgroundColor;
-  
+
   /// Border color of the input field
   final Color? borderColor;
-  
+
   /// Focused border color
   final Color? focusedBorderColor;
-  
+
   /// Background color of the dropdown
   final Color? dropdownBackgroundColor;
-  
+
   /// Border color of the dropdown
   final Color? dropdownBorderColor;
-  
+
   /// Background color of hovered dropdown items
   final Color? itemHoverColor;
-  
+
   /// Text color of the label
   final Color? labelColor;
-  
+
   /// Text color of the input value
   final Color? valueColor;
-  
+
   /// Text color of the placeholder
   final Color? placeholderColor;
-  
+
   /// Text color of dropdown items
   final Color? itemTextColor;
-  
+
   /// Text style for the label
   final TextStyle? labelStyle;
-  
+
   /// Text style for the input value
   final TextStyle? valueStyle;
-  
+
   /// Text style for the placeholder
   final TextStyle? placeholderStyle;
-  
+
   /// Text style for dropdown items
   final TextStyle? itemTextStyle;
-  
+
   /// Elevation of the dropdown
   final double dropdownElevation;
-  
+
   /// Shadow color of the dropdown
   final Color? dropdownShadowColor;
 
@@ -133,7 +133,11 @@ class AutoComplete extends StatelessWidget {
     this.value = '',
     this.label = 'Label',
     this.placeholder,
-    this.options = const ['Select Menu Item', 'Select Menu Item', 'Select Menu Item'],
+    this.options = const [
+      'Select Menu Item',
+      'Select Menu Item',
+      'Select Menu Item',
+    ],
     this.selectedOptionIndex,
     this.showLeftIcon = false,
     this.leftIcon,
@@ -150,9 +154,15 @@ class AutoComplete extends StatelessWidget {
     this.maxDropdownHeight,
     this.borderRadius = 6.0,
     this.itemBorderRadius = 4.0,
-    this.inputPadding = const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+    this.inputPadding = const EdgeInsets.symmetric(
+      horizontal: 12.0,
+      vertical: 8.0,
+    ),
     this.dropdownPadding = const EdgeInsets.all(4.0),
-    this.itemPadding = const EdgeInsets.symmetric(horizontal: 12.0, vertical: 5.0),
+    this.itemPadding = const EdgeInsets.symmetric(
+      horizontal: 12.0,
+      vertical: 5.0,
+    ),
     this.inputItemSpacing = 8.0,
     this.dropdownSpacing = 4.0,
     this.backgroundColor,
@@ -178,23 +188,37 @@ class AutoComplete extends StatelessWidget {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
     final textTheme = theme.textTheme;
-    
+
     final effectiveBackgroundColor = backgroundColor ?? colorScheme.surface;
     final effectiveBorderColor = borderColor ?? colorScheme.outline;
-    final effectiveFocusedBorderColor = focusedBorderColor ?? colorScheme.primary;
-    final effectiveDropdownBackgroundColor = dropdownBackgroundColor ?? colorScheme.surface;
-    final effectiveDropdownBorderColor = dropdownBorderColor ?? colorScheme.surface;
-    final effectiveItemHoverColor = itemHoverColor ?? colorScheme.onSurface.withOpacity(0.04);
-    final effectiveLabelColor = labelColor ?? (isFocused ? colorScheme.primary : colorScheme.onSurface.withOpacity(0.65));
-    final effectiveValueColor = valueColor ?? colorScheme.onSurface.withOpacity(0.25);
-    final effectivePlaceholderColor = placeholderColor ?? colorScheme.onSurface.withOpacity(0.25);
-    final effectiveItemTextColor = itemTextColor ?? colorScheme.onSurface.withOpacity(0.88);
-    final effectiveDropdownShadowColor = dropdownShadowColor ?? colorScheme.shadow;
+    final effectiveFocusedBorderColor =
+        focusedBorderColor ?? colorScheme.primary;
+    final effectiveDropdownBackgroundColor =
+        dropdownBackgroundColor ?? colorScheme.surface;
+    final effectiveDropdownBorderColor =
+        dropdownBorderColor ?? colorScheme.surface;
+    final effectiveItemHoverColor =
+        itemHoverColor ?? colorScheme.onSurface.withOpacity(0.04);
+    final effectiveLabelColor =
+        labelColor ??
+        (isFocused
+            ? colorScheme.primary
+            : colorScheme.onSurface.withOpacity(0.65));
+    final effectiveValueColor =
+        valueColor ?? colorScheme.onSurface.withOpacity(0.25);
+    final effectivePlaceholderColor =
+        placeholderColor ?? colorScheme.onSurface.withOpacity(0.25);
+    final effectiveItemTextColor =
+        itemTextColor ?? colorScheme.onSurface.withOpacity(0.88);
+    final effectiveDropdownShadowColor =
+        dropdownShadowColor ?? colorScheme.shadow;
 
-    final effectiveLabelStyle = labelStyle ?? textTheme.labelSmall?.copyWith(
-      fontWeight: FontWeight.w600,
-      textBaseline: TextBaseline.alphabetic,
-    );
+    final effectiveLabelStyle =
+        labelStyle ??
+        textTheme.labelSmall?.copyWith(
+          fontWeight: FontWeight.w600,
+          textBaseline: TextBaseline.alphabetic,
+        );
     final effectiveValueStyle = valueStyle ?? textTheme.bodyMedium;
     final effectivePlaceholderStyle = placeholderStyle ?? textTheme.bodyMedium;
     final effectiveItemTextStyle = itemTextStyle ?? textTheme.bodyMedium;
@@ -250,28 +274,23 @@ class AutoComplete extends StatelessWidget {
         height: inputHeight,
         decoration: BoxDecoration(
           color: backgroundColor,
-          border: Border.all(
-            color: borderColor,
-            width: isFocused ? 2.0 : 1.0,
-          ),
+          border: Border.all(color: borderColor, width: isFocused ? 2.0 : 1.0),
           borderRadius: BorderRadius.circular(borderRadius),
-          boxShadow: isFocused ? [
-            BoxShadow(
-              color: borderColor.withOpacity(0.2),
-              blurRadius: 0,
-              spreadRadius: 2,
-            ),
-          ] : null,
+          boxShadow: isFocused
+              ? [
+                  BoxShadow(
+                    color: borderColor.withOpacity(0.2),
+                    blurRadius: 0,
+                    spreadRadius: 2,
+                  ),
+                ]
+              : null,
         ),
         padding: inputPadding,
         child: Row(
           children: [
             if (showLeftIcon && leftIcon != null) ...[
-              SizedBox(
-                width: 16,
-                height: 16,
-                child: leftIcon,
-              ),
+              SizedBox(width: 16, height: 16, child: leftIcon),
               SizedBox(width: inputItemSpacing),
             ],
             Expanded(
@@ -286,11 +305,7 @@ class AutoComplete extends StatelessWidget {
             ),
             if (showRightIcon && rightIcon != null) ...[
               SizedBox(width: inputItemSpacing),
-              SizedBox(
-                width: 16,
-                height: 16,
-                child: rightIcon,
-              ),
+              SizedBox(width: 16, height: 16, child: rightIcon),
             ],
           ],
         ),
@@ -321,9 +336,9 @@ class AutoComplete extends StatelessWidget {
               Expanded(
                 child: Text(
                   value.isEmpty ? (placeholder ?? '') : value,
-                  style: value.isEmpty 
-                    ? placeholderStyle?.copyWith(color: placeholderColor)
-                    : valueStyle?.copyWith(color: valueColor),
+                  style: value.isEmpty
+                      ? placeholderStyle?.copyWith(color: placeholderColor)
+                      : valueStyle?.copyWith(color: valueColor),
                 ),
               ),
               if (isFocused && value.isNotEmpty)
@@ -357,9 +372,7 @@ class AutoComplete extends StatelessWidget {
     Color shadowColor,
   ) {
     return Container(
-      constraints: BoxConstraints(
-        maxHeight: maxDropdownHeight ?? 200,
-      ),
+      constraints: BoxConstraints(maxHeight: maxDropdownHeight ?? 200),
       decoration: BoxDecoration(
         color: backgroundColor,
         border: Border.all(color: borderColor),
@@ -389,14 +402,16 @@ class AutoComplete extends StatelessWidget {
         shrinkWrap: true,
         itemCount: options.length,
         itemBuilder: (context, index) {
-          final isSelected = selectedOptionIndex == index;
-          final isHovered = index == 0; // Simulate hover for first item as shown in design
-          
+          final isHovered =
+              index == 0; // Simulate hover for first item as shown in design
+
           return GestureDetector(
             onTap: () => onOptionSelected?.call(options[index]),
             child: Container(
               height: 32,
-              margin: index > 0 ? const EdgeInsets.only(top: 0) : EdgeInsets.zero,
+              margin: index > 0
+                  ? const EdgeInsets.only(top: 0)
+                  : EdgeInsets.zero,
               decoration: BoxDecoration(
                 color: isHovered ? itemHoverColor : Colors.transparent,
                 borderRadius: BorderRadius.circular(itemBorderRadius),
