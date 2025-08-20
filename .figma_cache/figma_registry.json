@@ -618,6 +618,359 @@
         }
       ],
       "description": "User Info"
+    },
+    "search_input": {
+      "name": "search_input",
+      "figmaIds": [
+        "645:5573"
+      ],
+      "filePath": "lib/generated/components/search_input/search_input.dart",
+      "generatedAt": "2025-08-20T23:07:19.863199",
+      "properties": [
+        {
+          "name": "hintText",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": "'Search'"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<String>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onClear",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "width",
+          "type": "double",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Search Input/Default/Default/False"
+    },
+    "input_basic": {
+      "name": "input_basic",
+      "figmaIds": [
+        "647:28280"
+      ],
+      "filePath": "lib/generated/components/input_basic/input_basic.dart",
+      "generatedAt": "2025-08-20T23:07:46.780752",
+      "properties": [
+        {
+          "name": "label",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Input'"
+        },
+        {
+          "name": "leftIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "rightIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "showLeftIcon",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "showRightIcon",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "controller",
+          "type": "TextEditingController",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<String>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        }
+      ],
+      "description": "Input Basic/Default/Large/Default"
+    },
+    "badge_text": {
+      "name": "badge_text",
+      "figmaIds": [
+        "674:6659"
+      ],
+      "filePath": "lib/generated/components/badge_text/badge_text.dart",
+      "generatedAt": "2025-08-20T23:08:19.852975",
+      "properties": [
+        {
+          "name": "text",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "status",
+          "type": "BadgeStatus",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "BadgeStatus.success"
+        },
+        {
+          "name": "dotColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "textColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Badge / Text"
+    },
+    "custom_autocomplete": {
+      "name": "custom_autocomplete",
+      "figmaIds": [
+        "648:7318"
+      ],
+      "filePath": "lib/generated/components/custom_autocomplete/custom_autocomplete.dart",
+      "generatedAt": "2025-08-20T23:08:56.619967",
+      "properties": [
+        {
+          "name": "placeholder",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Input'"
+        },
+        {
+          "name": "options",
+          "type": "List<String>",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<String>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "prefixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "suffixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "AutoComplite/Default/False"
+    },
+    "input_form": {
+      "name": "input_form",
+      "figmaIds": [
+        "310:8104"
+      ],
+      "filePath": "lib/generated/components/input_form/input_form.dart",
+      "generatedAt": "2025-08-20T23:09:12.900180",
+      "properties": [
+        {
+          "name": "label",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Input Label'"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Input'"
+        },
+        {
+          "name": "description",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'This is a caption under a text input.'"
+        },
+        {
+          "name": "showLabel",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "showDescription",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "showTooltip",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "prefixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "suffixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<String>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "controller",
+          "type": "TextEditingController",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Input Form/Default"
+    },
+    "auto_complete_true": {
+      "name": "auto_complete_true",
+      "figmaIds": [
+        "468:35072"
+      ],
+      "filePath": "lib/generated/components/auto_complete_true/auto_complete_true.dart",
+      "generatedAt": "2025-08-20T23:09:32.973664",
+      "properties": [
+        {
+          "name": "placeholder",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": "'Input'"
+        },
+        {
+          "name": "options",
+          "type": "List<String>",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<String?>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        }
+      ],
+      "description": "AutoComplite/Default/True"
     }
   },
   "idToComponentMap": {
@@ -639,19 +992,27 @@
     "713:13285": "primary_button",
     "313:8474": "custom_radio",
     "313:8490": "custom_radio",
-    "40000102:238": "user_info"
+    "40000102:238": "user_info",
+    "645:5573": "search_input",
+    "647:28280": "input_basic",
+    "674:6659": "badge_text",
+    "648:7318": "custom_autocomplete",
+    "310:8104": "input_form",
+    "468:35072": "auto_complete_true"
   },
   "exampleScreens": {
     "mobile_example": {
       "name": "mobile_example",
       "figmaId": "40000070:4567",
       "filePath": "lib/generated/screens/mobile_example/mobile_example.dart",
-      "generatedAt": "2025-08-20T22:49:08.688806",
+      "generatedAt": "2025-08-20T23:10:17.929118",
       "usedComponents": [
         "dropdown_button_basic",
         "tab_item",
         "tab_item",
         "user_info",
+        "auto_complete_true",
+        "custom_autocomplete",
         "tag",
         "app_checkbox",
         "primary_button"
@@ -760,6 +1121,6 @@
     ],
     "description": "Generated from Figma color variables with 88 mapped fields"
   },
-  "lastUpdated": "2025-08-20T22:49:19.350854",
+  "lastUpdated": "2025-08-20T23:10:27.389634",
   "version": "1.1"
 }

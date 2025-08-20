@@ -2,35 +2,36 @@ import 'package:flutter/material.dart';
 import '../../theme/color_theme.dart';
 
 class InputForm extends StatelessWidget {
-  final String? labelText;
-  final String? hintText;
-  final String? descriptionText;
-  final bool showLabel;
-  final bool showDescription;
-  final Widget? prefixIcon;
-  final Widget? suffixIcon;
-  final bool showTooltip;
-  final TextEditingController? controller;
-  final ValueChanged<String>? onChanged;
-
   const InputForm({
     super.key,
-    this.labelText = 'Input Label',
-    this.hintText = 'Input',
-    this.descriptionText = 'This is a caption under a text input.',
+    this.label = 'Input Label',
+    this.placeholder = 'Input',
+    this.description = 'This is a caption under a text input.',
     this.showLabel = true,
     this.showDescription = true,
+    this.showTooltip = true,
     this.prefixIcon,
     this.suffixIcon,
-    this.showTooltip = true,
-    this.controller,
     this.onChanged,
+    this.controller,
   });
+
+  final String label;
+  final String placeholder;
+  final String description;
+  final bool showLabel;
+  final bool showDescription;
+  final bool showTooltip;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
+  final ValueChanged<String>? onChanged;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     final customColors = Theme.of(context).extension<CustomColors>();
-    
+    final theme = Theme.of(context);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -40,12 +41,12 @@ class InputForm extends StatelessWidget {
             child: Row(
               children: [
                 Text(
-                  labelText ?? 'Input Label',
-                  style: TextStyle(
+                  label,
+                  style: theme.textTheme.bodyMedium?.copyWith(
                     fontSize: 14,
-                    color: (customColors?.textColorText ?? 
-                           Theme.of(context).colorScheme.onSurface).withOpacity(0.88),
                     height: 24 / 14,
+                    color: customColors?.textColorText?.withOpacity(0.88) ??
+                        theme.colorScheme.onSurface.withOpacity(0.88),
                   ),
                 ),
                 if (showTooltip) ...[
@@ -53,8 +54,8 @@ class InputForm extends StatelessWidget {
                   Icon(
                     Icons.help_outline,
                     size: 14,
-                    color: (customColors?.colorIcon ?? 
-                           Theme.of(context).colorScheme.onSurface).withOpacity(0.45),
+                    color: customColors?.colorIcon?.withOpacity(0.45) ??
+                        theme.colorScheme.onSurface.withOpacity(0.45),
                   ),
                 ],
               ],
@@ -63,74 +64,76 @@ class InputForm extends StatelessWidget {
         TextField(
           controller: controller,
           onChanged: onChanged,
+          style: theme.textTheme.bodyMedium?.copyWith(
+            fontSize: 14,
+            color: customColors?.textColorText ?? theme.colorScheme.onSurface,
+          ),
           decoration: InputDecoration(
-            hintText: hintText,
-            hintStyle: TextStyle(
+            hintText: placeholder,
+            hintStyle: theme.textTheme.bodyMedium?.copyWith(
               fontSize: 14,
-              color: customColors?.textColorTextPlaceholder ?? 
-                     Theme.of(context).colorScheme.onSurface.withOpacity(0.25),
+              color: customColors?.textColorTextPlaceholder?.withOpacity(0.25) ??
+                  theme.colorScheme.onSurface.withOpacity(0.25),
             ),
-            prefixIcon: prefixIcon != null 
-              ? Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: SizedBox(
+            prefixIcon: prefixIcon != null
+                ? Container(
                     width: 16,
                     height: 16,
+                    padding: const EdgeInsets.all(12),
                     child: prefixIcon,
-                  ),
-                )
-              : null,
+                  )
+                : null,
             suffixIcon: suffixIcon != null
-              ? Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: SizedBox(
+                ? Container(
                     width: 14,
                     height: 14,
+                    padding: const EdgeInsets.all(15),
                     child: suffixIcon,
-                  ),
-                )
-              : null,
+                  )
+                : null,
             filled: true,
-            fillColor: customColors?.backgroundColorBgContainer ?? 
-                      Theme.of(context).colorScheme.surface,
+            fillColor: customColors?.backgroundColorBgContainer ??
+                theme.colorScheme.surface,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(6),
               borderSide: BorderSide(
-                color: customColors?.borderColorBorder ?? 
-                       Theme.of(context).colorScheme.outline,
+                color: customColors?.borderColorBorder ??
+                    theme.colorScheme.outline,
+                width: 1,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(6),
               borderSide: BorderSide(
-                color: customColors?.borderColorBorder ?? 
-                       Theme.of(context).colorScheme.outline,
+                color: customColors?.borderColorBorder ??
+                    theme.colorScheme.outline,
+                width: 1,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(6),
               borderSide: BorderSide(
-                color: Theme.of(context).colorScheme.primary,
+                color: theme.colorScheme.primary,
+                width: 2,
               ),
             ),
-            contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-          ),
-          style: TextStyle(
-            fontSize: 14,
-            color: customColors?.textColorText ?? 
-                   Theme.of(context).colorScheme.onSurface,
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 12,
+              vertical: 7,
+            ),
+            isDense: true,
           ),
         ),
         if (showDescription)
           Padding(
             padding: const EdgeInsets.only(top: 4.0),
             child: Text(
-              descriptionText ?? 'This is a caption under a text input.',
-              style: TextStyle(
+              description,
+              style: theme.textTheme.bodyMedium?.copyWith(
                 fontSize: 14,
-                color: (customColors?.textColorTextDescription ?? 
-                       Theme.of(context).colorScheme.onSurface).withOpacity(0.45),
                 height: 22 / 14,
+                color: customColors?.textColorTextDescription?.withOpacity(0.45) ??
+                    theme.colorScheme.onSurface.withOpacity(0.45),
               ),
             ),
           ),
