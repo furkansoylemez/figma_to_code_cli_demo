@@ -1,973 +1,415 @@
 {
-  "exportDate": "2025-08-20T18:43:20.168Z",
-  "totalVariables": 88,
+  "exportDate": "2025-08-21T11:29:24.570Z",
+  "totalVariables": 41,
   "variables": [
     {
-      "name": "Fill/colorFillContent",
-      "id": "VariableID:784:8502",
+      "name": "Text/colorTextBase",
+      "id": "VariableID:8952:838",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgba(0, 0, 0, 0.05999999865889549)",
-        "Dark": "rgba(0, 0, 0, 0.05999999865889549)"
-      }
-    },
-    {
-      "name": "Fill/colorFillAlter",
-      "id": "VariableID:784:8503",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.019999999552965164)",
-        "Dark": "rgba(0, 0, 0, 0.019999999552965164)"
-      }
-    },
-    {
-      "name": "Background/colorBgContainerDisabled",
-      "id": "VariableID:784:8504",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.03999999910593033)",
-        "Dark": "rgba(0, 0, 0, 0.03999999910593033)"
-      }
-    },
-    {
-      "name": "Text/colorTextPlaceholder",
-      "id": "VariableID:784:8505",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.25)",
-        "Dark": "rgba(0, 0, 0, 0.25)"
-      }
-    },
-    {
-      "name": "Text/colorTextDisabled",
-      "id": "VariableID:784:8506",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.25)",
-        "Dark": "rgba(0, 0, 0, 0.25)"
-      }
-    },
-    {
-      "name": "Text/colorTextHeading",
-      "id": "VariableID:784:8507",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.8799999952316284)",
-        "Dark": "rgba(0, 0, 0, 0.8799999952316284)"
-      }
-    },
-    {
-      "name": "Text/colorTextDescription",
-      "id": "VariableID:784:8508",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.44999998807907104)",
-        "Dark": "rgba(0, 0, 0, 0.6499999761581421)"
-      }
-    },
-    {
-      "name": "Background/colorBgTextHover",
-      "id": "VariableID:784:8509",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.05999999865889549)",
-        "Dark": "rgba(0, 0, 0, 0.05999999865889549)"
+        "Mode 1": "rgb(16, 24, 40)"
       }
     },
     {
       "name": "Text/colorText",
-      "id": "VariableID:784:8515",
+      "id": "VariableID:8952:839",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgba(0, 0, 0, 0.8799999952316284)",
-        "Dark": "rgba(255, 255, 255, 0.8500000238418579)"
-      }
-    },
-    {
-      "name": "Text/colorTextQuaternary",
-      "id": "VariableID:784:8516",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.25)",
-        "Dark": "rgba(255, 255, 255, 0.25)"
-      }
-    },
-    {
-      "name": "Fill/colorFill",
-      "id": "VariableID:784:8517",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.15000000596046448)",
-        "Dark": "rgba(255, 255, 255, 0.15000000596046448)"
-      }
-    },
-    {
-      "name": "Fill/colorFillSecondary",
-      "id": "VariableID:784:8518",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.05999999865889549)",
-        "Dark": "rgba(255, 255, 255, 0.05999999865889549)"
-      }
-    },
-    {
-      "name": "Fill/colorFillTertiary",
-      "id": "VariableID:784:8519",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.03999999910593033)",
-        "Dark": "rgba(255, 255, 255, 0.03999999910593033)"
-      }
-    },
-    {
-      "name": "Background/colorBgContainer",
-      "id": "VariableID:784:8520",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 255, 255)",
-        "Dark": "rgb(38, 38, 44)"
-      }
-    },
-    {
-      "name": "Background/colorBgLayout",
-      "id": "VariableID:784:8521",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(245, 245, 245)",
-        "Dark": "rgb(19, 19, 22)"
-      }
-    },
-    {
-      "name": "Background/colorBgElevated",
-      "id": "VariableID:784:8522",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 255, 255)",
-        "Dark": "rgb(47, 47, 55)"
-      }
-    },
-    {
-      "name": "Border/colorBorder",
-      "id": "VariableID:784:8523",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(217, 217, 217)",
-        "Dark": "rgb(80, 80, 93)"
-      }
-    },
-    {
-      "name": "Border/colorBorderSecondary",
-      "id": "VariableID:784:8524",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(240, 240, 240)",
-        "Dark": "rgb(64, 64, 74)"
-      }
-    },
-    {
-      "name": "Border/colorSplit",
-      "id": "VariableID:784:8525",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(240, 240, 240)",
-        "Dark": "rgb(240, 240, 240)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryBg",
-      "id": "VariableID:784:8526",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(244, 241, 255)",
-        "Dark": "rgb(17, 26, 44)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryBorder",
-      "id": "VariableID:784:8527",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(190, 180, 215)",
-        "Dark": "rgb(21, 50, 91)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryBorderHover",
-      "id": "VariableID:784:8528",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(159, 143, 195)",
-        "Dark": "rgb(21, 65, 126)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryHover",
-      "id": "VariableID:784:8529",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(115, 92, 168)",
-        "Dark": "rgb(60, 137, 232)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimary",
-      "id": "VariableID:784:8530",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(88, 61, 151)",
-        "Dark": "rgb(22, 104, 220)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryActive",
-      "id": "VariableID:784:8531",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(46, 12, 125)",
-        "Dark": "rgb(21, 84, 173)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryTextHover",
-      "id": "VariableID:784:8532",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(42, 11, 114)",
-        "Dark": "rgb(60, 137, 232)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryText",
-      "id": "VariableID:784:8533",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(33, 9, 89)",
-        "Dark": "rgb(22, 104, 220)"
-      }
-    },
-    {
-      "name": "Primary/colorPrimaryTextActive",
-      "id": "VariableID:784:8534",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(25, 7, 69)",
-        "Dark": "rgb(21, 84, 173)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessBg",
-      "id": "VariableID:784:8535",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(246, 255, 237)",
-        "Dark": "rgb(246, 255, 237)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessBgHover",
-      "id": "VariableID:784:8536",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(217, 247, 190)",
-        "Dark": "rgb(217, 247, 190)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessBorder",
-      "id": "VariableID:784:8537",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(183, 235, 143)",
-        "Dark": "rgb(183, 235, 143)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessBorderHover",
-      "id": "VariableID:784:8538",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(149, 222, 100)",
-        "Dark": "rgb(149, 222, 100)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessHover",
-      "id": "VariableID:784:8539",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(115, 209, 61)",
-        "Dark": "rgb(115, 209, 61)"
-      }
-    },
-    {
-      "name": "Success/colorSuccess",
-      "id": "VariableID:784:8540",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(82, 196, 26)",
-        "Dark": "rgb(82, 196, 26)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessActive",
-      "id": "VariableID:784:8541",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(56, 158, 13)",
-        "Dark": "rgb(56, 158, 13)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessTextHover",
-      "id": "VariableID:784:8542",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(35, 120, 4)",
-        "Dark": "rgb(35, 120, 4)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessText",
-      "id": "VariableID:784:8543",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(19, 82, 0)",
-        "Dark": "rgb(19, 82, 0)"
-      }
-    },
-    {
-      "name": "Success/colorSuccessTextActive",
-      "id": "VariableID:784:8544",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(9, 43, 0)",
-        "Dark": "rgb(9, 43, 0)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningBg",
-      "id": "VariableID:784:8545",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 251, 230)",
-        "Dark": "rgb(255, 251, 230)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningBgHover",
-      "id": "VariableID:784:8546",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 241, 184)",
-        "Dark": "rgb(255, 241, 184)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningBorder",
-      "id": "VariableID:784:8547",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 229, 143)",
-        "Dark": "rgb(255, 229, 143)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningBorderHover",
-      "id": "VariableID:784:8548",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 214, 102)",
-        "Dark": "rgb(255, 214, 102)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningHover",
-      "id": "VariableID:784:8549",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 197, 61)",
-        "Dark": "rgb(255, 197, 61)"
-      }
-    },
-    {
-      "name": "Warning/colorWarning",
-      "id": "VariableID:784:8550",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(250, 173, 20)",
-        "Dark": "rgb(250, 173, 20)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningActive",
-      "id": "VariableID:784:8551",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(212, 136, 6)",
-        "Dark": "rgb(212, 136, 6)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningTextHover",
-      "id": "VariableID:784:8552",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(173, 104, 0)",
-        "Dark": "rgb(173, 104, 0)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningText",
-      "id": "VariableID:784:8553",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(135, 77, 0)",
-        "Dark": "rgb(135, 77, 0)"
-      }
-    },
-    {
-      "name": "Warning/colorWarningTextActive",
-      "id": "VariableID:784:8554",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(97, 52, 0)",
-        "Dark": "rgb(97, 52, 0)"
-      }
-    },
-    {
-      "name": "Error/colorErrorBg",
-      "id": "VariableID:784:8555",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 241, 240)",
-        "Dark": "rgb(255, 241, 240)"
-      }
-    },
-    {
-      "name": "Error/colorErrorBgHover",
-      "id": "VariableID:784:8556",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 204, 199)",
-        "Dark": "rgb(255, 204, 199)"
-      }
-    },
-    {
-      "name": "Error/colorErrorBorder",
-      "id": "VariableID:784:8557",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 163, 158)",
-        "Dark": "rgb(255, 163, 158)"
-      }
-    },
-    {
-      "name": "Error/colorErrorBorderHover",
-      "id": "VariableID:784:8558",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 120, 117)",
-        "Dark": "rgb(255, 120, 117)"
-      }
-    },
-    {
-      "name": "Error/colorErrorHover",
-      "id": "VariableID:784:8559",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 77, 79)",
-        "Dark": "rgb(255, 77, 79)"
-      }
-    },
-    {
-      "name": "Error/colorError",
-      "id": "VariableID:784:8560",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(245, 34, 45)",
-        "Dark": "rgb(245, 34, 45)"
-      }
-    },
-    {
-      "name": "Error/colorErrorActive",
-      "id": "VariableID:784:8561",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(207, 19, 34)",
-        "Dark": "rgb(207, 19, 34)"
-      }
-    },
-    {
-      "name": "Error/colorErrorTextHover",
-      "id": "VariableID:784:8562",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(168, 7, 26)",
-        "Dark": "rgb(168, 7, 26)"
-      }
-    },
-    {
-      "name": "Error/colorErrorText",
-      "id": "VariableID:784:8563",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(130, 0, 20)",
-        "Dark": "rgb(130, 0, 20)"
-      }
-    },
-    {
-      "name": "Error/colorErrorTextActive",
-      "id": "VariableID:784:8564",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(92, 0, 17)",
-        "Dark": "rgb(92, 0, 17)"
-      }
-    },
-    {
-      "name": "Background/colorBgMask",
-      "id": "VariableID:784:8565",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.44999998807907104)",
-        "Dark": "rgba(0, 0, 0, 0.44999998807907104)"
-      }
-    },
-    {
-      "name": "Text/colorTextBase",
-      "id": "VariableID:784:8566",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(0, 0, 0)",
-        "Dark": "rgb(255, 255, 255)"
-      }
-    },
-    {
-      "name": "Text/colorTextLightSolid",
-      "id": "VariableID:784:8567",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 255, 255)",
-        "Dark": "rgb(255, 255, 255)"
-      }
-    },
-    {
-      "name": "Background/colorBgBase",
-      "id": "VariableID:784:8568",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(255, 255, 255)",
-        "Dark": "rgb(19, 19, 22)"
-      }
-    },
-    {
-      "name": "Background/colorBgSpotlight",
-      "id": "VariableID:785:8120",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.8500000238418579)",
-        "Dark": "rgb(80, 80, 93)"
-      }
-    },
-    {
-      "name": "Fill/colorFillQuaternary",
-      "id": "VariableID:785:8121",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.019999999552965164)",
-        "Dark": "rgba(255, 255, 255, 0.019999999552965164)"
-      }
-    },
-    {
-      "name": "Text/colorTextSecondary",
-      "id": "VariableID:785:8122",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.6499999761581421)",
-        "Dark": "rgba(255, 255, 255, 0.6499999761581421)"
+        "Mode 1": "rgb(37, 43, 55)"
       }
     },
     {
       "name": "Text/colorTextTertiary",
-      "id": "VariableID:785:8123",
+      "id": "VariableID:8952:840",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgba(0, 0, 0, 0.44999998807907104)",
-        "Dark": "rgba(255, 255, 255, 0.44999998807907104)"
+        "Mode 1": "rgb(37, 43, 55)"
       }
     },
     {
-      "name": "colorLink",
-      "id": "VariableID:785:8124",
+      "name": "Text/colorTextLightSolid",
+      "id": "VariableID:8952:842",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgb(22, 119, 255)",
-        "Dark": "rgb(22, 104, 220)"
+        "Mode 1": "rgb(255, 255, 255)"
       }
     },
     {
-      "name": "colorLinkHover",
-      "id": "VariableID:785:8125",
+      "name": "Text/colorTextDisabled",
+      "id": "VariableID:8952:844",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgb(105, 177, 255)",
-        "Dark": "rgb(21, 65, 126)"
+        "Mode 1": "rgb(233, 234, 235)"
       }
     },
     {
-      "name": "colorLinkActive",
-      "id": "VariableID:785:8126",
+      "name": "Text/colorTextPlaceholder",
+      "id": "VariableID:8952:845",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgb(9, 88, 217)",
-        "Dark": "rgb(21, 84, 173)"
+        "Mode 1": "rgb(213, 215, 218)"
       }
     },
     {
-      "name": "Primary/colorPrimaryBgHover",
-      "id": "VariableID:785:8128",
+      "name": "Text/colorTextSecondary",
+      "id": "VariableID:8952:846",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgb(234, 231, 242)",
-        "Dark": "rgb(17, 37, 69)"
+        "Mode 1": "rgb(113, 118, 128)"
       }
     },
     {
-      "name": "colorIcon",
-      "id": "VariableID:785:9929",
+      "name": "Text/colorTextDescription",
+      "id": "VariableID:8952:847",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgba(0, 0, 0, 0.44999998807907104)",
-        "Dark": "rgba(255, 255, 255, 0.44999998807907104)"
-      }
-    },
-    {
-      "name": "colorIconHover",
-      "id": "VariableID:785:9930",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.8799999952316284)",
-        "Dark": "rgba(255, 255, 255, 0.8500000238418579)"
-      }
-    },
-    {
-      "name": "Background/colorBgTextActive",
-      "id": "VariableID:787:7904",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgba(0, 0, 0, 0.15000000596046448)",
-        "Dark": "rgba(0, 0, 0, 0.15000000596046448)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryTextActive",
-      "id": "VariableID:2567:27343",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(4, 39, 90)",
-        "Dark": "rgb(21, 84, 173)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryText",
-      "id": "VariableID:2567:27344",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(9, 57, 129)",
-        "Dark": "rgb(22, 104, 220)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryTextHover",
-      "id": "VariableID:2567:27345",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(18, 70, 147)",
-        "Dark": "rgb(60, 137, 232)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryActive",
-      "id": "VariableID:2567:27346",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(34, 84, 159)",
-        "Dark": "rgb(21, 84, 173)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondary",
-      "id": "VariableID:2567:27347",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(44, 93, 168)",
-        "Dark": "rgb(22, 104, 220)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryHover",
-      "id": "VariableID:2567:27348",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(58, 106, 181)",
-        "Dark": "rgb(60, 137, 232)"
-      }
-    },
-    {
-      "name": "Secondary/colorPrimaryBorderHover",
-      "id": "VariableID:2567:27349",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(70, 121, 200)",
-        "Dark": "rgb(21, 65, 126)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryBorder",
-      "id": "VariableID:2567:27350",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(90, 141, 221)",
-        "Dark": "rgb(21, 50, 91)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryBgHover",
-      "id": "VariableID:2567:27351",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(139, 178, 240)",
-        "Dark": "rgb(17, 37, 69)"
-      }
-    },
-    {
-      "name": "Secondary/colorSecondaryBg",
-      "id": "VariableID:2567:27352",
-      "type": "COLOR",
-      "description": "No description",
-      "collection": "Colors",
-      "values": {
-        "Light": "rgb(234, 242, 255)",
-        "Dark": "rgb(17, 26, 44)"
+        "Mode 1": "rgb(175, 181, 217)"
       }
     },
     {
       "name": "Icon/colorIcon",
-      "id": "VariableID:7531:78596",
+      "id": "VariableID:8952:2376",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgba(0, 0, 0, 0.44999998807907104)",
-        "Dark": "rgb(255, 255, 255)"
+        "Mode 1": "rgb(175, 52, 248)"
       }
     },
     {
-      "name": "Icon/colorIconHover",
-      "id": "VariableID:7531:78597",
+      "name": "Background/colorBgContainer",
+      "id": "VariableID:8952:2407",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgba(0, 0, 0, 0.8799999952316284)",
-        "Dark": "rgb(255, 255, 255)"
+        "Mode 1": "rgb(245, 245, 247)"
       }
     },
     {
-      "name": "Link/colorLink",
-      "id": "VariableID:7531:81576",
+      "name": "Background/colorBgBase",
+      "id": "VariableID:8952:2408",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgb(22, 119, 255)",
-        "Dark": "rgb(17, 37, 69)"
+        "Mode 1": "rgb(255, 255, 255)"
       }
     },
     {
-      "name": "Link/colorLinkHover",
-      "id": "VariableID:7531:81589",
+      "name": "Border/colorSplit",
+      "id": "VariableID:8952:2417",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgb(105, 177, 255)",
-        "Dark": "rgb(17, 37, 69)"
+        "Mode 1": "rgb(234, 236, 245)"
+      }
+    },
+    {
+      "name": "Border/colorBorderSecondary",
+      "id": "VariableID:8952:2418",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(213, 217, 235)"
+      }
+    },
+    {
+      "name": "Border/colorBorder",
+      "id": "VariableID:8952:2419",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(216, 216, 224)"
+      }
+    },
+    {
+      "name": "Fill/colorFillTertiary",
+      "id": "VariableID:8952:2431",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(213, 217, 235)"
+      }
+    },
+    {
+      "name": "Fill/colorFillSecondary",
+      "id": "VariableID:8952:2432",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(248, 249, 252)"
+      }
+    },
+    {
+      "name": "Fill/colorFill",
+      "id": "VariableID:8952:2433",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "name": "Primary/colorPrimaryTextActive",
+      "id": "VariableID:8952:2457",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(90, 10, 138)"
+      }
+    },
+    {
+      "name": "Primary/colorPrimary",
+      "id": "VariableID:8952:2458",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(175, 52, 248)"
+      }
+    },
+    {
+      "name": "Primary/colorPrimaryBg",
+      "id": "VariableID:8952:2459",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(247, 232, 255)"
+      }
+    },
+    {
+      "name": "Primary/colorPrimaryActive",
+      "id": "VariableID:8952:2460",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(113, 11, 174)"
+      }
+    },
+    {
+      "name": "Primary/colorPrimaryBorder",
+      "id": "VariableID:8952:2461",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(230, 188, 255)"
+      }
+    },
+    {
+      "name": "Primary/colorPrimaryText",
+      "id": "VariableID:8952:2464",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(113, 11, 174)"
+      }
+    },
+    {
+      "name": "Icon/colorIconSecondary",
+      "id": "VariableID:8952:2469",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(90, 10, 138)"
+      }
+    },
+    {
+      "name": "Secondary/colorSecondaryBg",
+      "id": "VariableID:8952:2484",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(252, 252, 253)"
+      }
+    },
+    {
+      "name": "Secondary/colorSecondaryBorder",
+      "id": "VariableID:8952:2487",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(175, 181, 217)"
+      }
+    },
+    {
+      "name": "Secondary/colorSecondary",
+      "id": "VariableID:8952:2489",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(41, 48, 86)"
+      }
+    },
+    {
+      "name": "Success/colorSuccess",
+      "id": "VariableID:8952:2522",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(3, 152, 85)"
+      }
+    },
+    {
+      "name": "Success/colorSuccessText",
+      "id": "VariableID:8952:2525",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(18, 183, 106)"
+      }
+    },
+    {
+      "name": "Success/colorSuccessBorder",
+      "id": "VariableID:8952:2527",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(50, 213, 131)"
+      }
+    },
+    {
+      "name": "Success/colorSuccessBg",
+      "id": "VariableID:8952:2531",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(246, 254, 249)"
       }
     },
     {
       "name": "Link/colorLinkActive",
-      "id": "VariableID:7531:81590",
+      "id": "VariableID:8952:2540",
       "type": "COLOR",
       "description": "No description",
-      "collection": "Colors",
+      "collection": "Collection 1",
       "values": {
-        "Light": "rgb(9, 88, 217)",
-        "Dark": "rgb(17, 37, 69)"
+        "Mode 1": "rgb(0, 134, 201)"
+      }
+    },
+    {
+      "name": "Link/colorLink",
+      "id": "VariableID:8952:2542",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(11, 165, 236)"
+      }
+    },
+    {
+      "name": "Warning/colorWarning",
+      "id": "VariableID:8952:2576",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(247, 144, 9)"
+      }
+    },
+    {
+      "name": "Warning/colorWarningBorder",
+      "id": "VariableID:8952:2581",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(253, 176, 34)"
+      }
+    },
+    {
+      "name": "Warning/colorWarningText",
+      "id": "VariableID:8952:2582",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(220, 104, 3)"
+      }
+    },
+    {
+      "name": "Warning/colorWarningBg",
+      "id": "VariableID:8952:2584",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(255, 252, 245)"
+      }
+    },
+    {
+      "name": "Error/colorErrorText",
+      "id": "VariableID:8952:2617",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(217, 45, 32)"
+      }
+    },
+    {
+      "name": "Error/colorErrorBorder",
+      "id": "VariableID:8952:2619",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(249, 112, 102)"
+      }
+    },
+    {
+      "name": "Error/colorError",
+      "id": "VariableID:8952:2621",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(240, 68, 56)"
+      }
+    },
+    {
+      "name": "Error/colorErrorBg",
+      "id": "VariableID:8952:2626",
+      "type": "COLOR",
+      "description": "No description",
+      "collection": "Collection 1",
+      "values": {
+        "Mode 1": "rgb(255, 251, 250)"
       }
     }
   ]
