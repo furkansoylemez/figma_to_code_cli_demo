@@ -1,0 +1,1034 @@
+{
+  "components": {
+    "dropdown_basic_inline": {
+      "name": "dropdown_basic_inline",
+      "figmaIds": [
+        "452:6145"
+      ],
+      "filePath": "lib/generated/components/dropdown_basic_inline/dropdown_basic_inline.dart",
+      "generatedAt": "2025-08-21T09:39:52.412581",
+      "properties": [
+        {
+          "name": "text",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "onPressed",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "textColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "padding",
+          "type": "EdgeInsets",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "borderRadius",
+          "type": "BorderRadius",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Dropdown Basic Inline/Dropdown Button Basic/Default"
+    },
+    "search_input": {
+      "name": "search_input",
+      "figmaIds": [
+        "645:5573",
+        "310:8104",
+        "647:28280"
+      ],
+      "filePath": "lib/generated/components/search_input/search_input.dart",
+      "generatedAt": "2025-08-21T09:40:21.450109",
+      "properties": [
+        {
+          "name": "variant",
+          "type": "SearchInputVariant",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "SearchInputVariant.search"
+        },
+        {
+          "name": "size",
+          "type": "SearchInputSize",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "SearchInputSize.medium"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Search'"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<String>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onSubmitted",
+          "type": "ValueChanged<String>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "controller",
+          "type": "TextEditingController",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "showLabel",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Input Label'"
+        },
+        {
+          "name": "showDescription",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        },
+        {
+          "name": "description",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'This is a caption under a text input.'"
+        },
+        {
+          "name": "showPrefixIcon",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        },
+        {
+          "name": "showSuffixIcon",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        },
+        {
+          "name": "prefixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "suffixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        }
+      ],
+      "description": "Search Input"
+    },
+    "tab_item": {
+      "name": "tab_item",
+      "figmaIds": [
+        "2233:30826",
+        "2233:30818",
+        "2233:30822"
+      ],
+      "filePath": "lib/generated/components/tab_item/tab_item.dart",
+      "generatedAt": "2025-08-21T09:41:25.289608",
+      "properties": [
+        {
+          "name": "title",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "state",
+          "type": "TabState",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "TabState.inactive"
+        },
+        {
+          "name": "badgeCount",
+          "type": "int",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "icon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onTap",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Item"
+    },
+    "dropdown_menu_item": {
+      "name": "dropdown_menu_item",
+      "figmaIds": [
+        "453:22311"
+      ],
+      "filePath": "lib/generated/components/dropdown_menu_item/dropdown_menu_item.dart",
+      "generatedAt": "2025-08-21T09:41:37.985572",
+      "properties": [
+        {
+          "name": "text",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "icon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "showIcon",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "onTap",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Item / Dropdown Menu Item/Default"
+    },
+    "custom_radio": {
+      "name": "custom_radio",
+      "figmaIds": [
+        "313:8474",
+        "313:8490"
+      ],
+      "filePath": "lib/generated/components/custom_radio/custom_radio.dart",
+      "generatedAt": "2025-08-21T09:41:52.426076",
+      "properties": [
+        {
+          "name": "value",
+          "type": "T",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "groupValue",
+          "type": "T",
+          "isRequired": true,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<T?>",
+          "isRequired": true,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Radio"
+    },
+    "default_pagination": {
+      "name": "default_pagination",
+      "figmaIds": [
+        "2201:5742"
+      ],
+      "filePath": "lib/generated/components/default_pagination/default_pagination.dart",
+      "generatedAt": "2025-08-21T09:42:22.020059",
+      "properties": [
+        {
+          "name": "currentPage",
+          "type": "int",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "totalPages",
+          "type": "int",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "itemsPerPage",
+          "type": "int",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "10"
+        },
+        {
+          "name": "totalItems",
+          "type": "int",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "0"
+        },
+        {
+          "name": "onPageChanged",
+          "type": "ValueChanged<int>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onItemsPerPageChanged",
+          "type": "ValueChanged<int>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "itemsPerPageOptions",
+          "type": "List<int>",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "const [10"
+        },
+        {
+          "name": "showItemsPerPageSelector",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "showItemsSummary",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        }
+      ],
+      "description": "paginations/Default"
+    },
+    "float_button": {
+      "name": "float_button",
+      "figmaIds": [
+        "639:24822"
+      ],
+      "filePath": "lib/generated/components/float_button/float_button.dart",
+      "generatedAt": "2025-08-21T09:42:43.169661",
+      "properties": [
+        {
+          "name": "icon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onPressed",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Float Button/Primery/Default/Default"
+    },
+    "custom_switch": {
+      "name": "custom_switch",
+      "figmaIds": [
+        "315:8187",
+        "639:23949",
+        "315:8654",
+        "315:8188"
+      ],
+      "filePath": "lib/generated/components/custom_switch/custom_switch.dart",
+      "generatedAt": "2025-08-21T09:43:08.405966",
+      "properties": [
+        {
+          "name": "value",
+          "type": "bool",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<bool>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "size",
+          "type": "CustomSwitchSize",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "CustomSwitchSize.defaultSize"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Switch"
+    },
+    "badge_text": {
+      "name": "badge_text",
+      "figmaIds": [
+        "674:6659"
+      ],
+      "filePath": "lib/generated/components/badge_text/badge_text.dart",
+      "generatedAt": "2025-08-21T09:44:35.355785",
+      "properties": [
+        {
+          "name": "text",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "status",
+          "type": "BadgeStatus",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "BadgeStatus.success"
+        }
+      ],
+      "description": "Badge / Text"
+    },
+    "primary_button": {
+      "name": "primary_button",
+      "figmaIds": [
+        "713:13285"
+      ],
+      "filePath": "lib/generated/components/primary_button/primary_button.dart",
+      "generatedAt": "2025-08-21T09:44:46.297150",
+      "properties": [
+        {
+          "name": "text",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "onPressed",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "iconLeft",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "iconRight",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "showIconLeft",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        },
+        {
+          "name": "showIconRight",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        },
+        {
+          "name": "showText",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        }
+      ],
+      "description": "Button/Primary/Large/False/False/Default/False/Default"
+    },
+    "tag": {
+      "name": "tag",
+      "figmaIds": [
+        "673:6153",
+        "673:6143",
+        "673:6142"
+      ],
+      "filePath": "lib/generated/components/tag/tag.dart",
+      "generatedAt": "2025-08-21T09:45:01.960878",
+      "properties": [
+        {
+          "name": "text",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "type",
+          "type": "TagType",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "TagType.colorful"
+        },
+        {
+          "name": "onTap",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onClose",
+          "type": "VoidCallback",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "textColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Tag"
+    },
+    "avatar": {
+      "name": "avatar",
+      "figmaIds": [
+        "1002:172585",
+        "1002:172589",
+        "1002:172591"
+      ],
+      "filePath": "lib/generated/components/avatar/avatar.dart",
+      "generatedAt": "2025-08-21T09:46:41.419270",
+      "properties": [
+        {
+          "name": "type",
+          "type": "AvatarType",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "image",
+          "type": "ImageProvider",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "icon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "text",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "size",
+          "type": "double",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "32.0"
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "foregroundColor",
+          "type": "Color",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "Avatar"
+    },
+    "custom_checkbox": {
+      "name": "custom_checkbox",
+      "figmaIds": [
+        "311:8277",
+        "311:8276"
+      ],
+      "filePath": "lib/generated/components/custom_checkbox/custom_checkbox.dart",
+      "generatedAt": "2025-08-21T09:46:53.049016",
+      "properties": [
+        {
+          "name": "value",
+          "type": "bool",
+          "isRequired": true,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "onChanged",
+          "type": "ValueChanged<bool?>",
+          "isRequired": true,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Checkbox'"
+        },
+        {
+          "name": "tristate",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        }
+      ],
+      "description": "Checkbox"
+    },
+    "custom_autocomplete_field": {
+      "name": "custom_autocomplete_field",
+      "figmaIds": [
+        "648:7318"
+      ],
+      "filePath": "lib/generated/components/custom_autocomplete_field/custom_autocomplete_field.dart",
+      "generatedAt": "2025-08-21T09:47:14.021829",
+      "properties": [
+        {
+          "name": "options",
+          "type": "List<T>",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "hintText",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "'Input'"
+        },
+        {
+          "name": "onSelected",
+          "type": "ValueChanged<T?>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "initialValue",
+          "type": "T",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "prefixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "suffixIcon",
+          "type": "Widget",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        }
+      ],
+      "description": "AutoComplite/Default/False"
+    },
+    "auto_complete_field": {
+      "name": "auto_complete_field",
+      "figmaIds": [
+        "468:35072"
+      ],
+      "filePath": "lib/generated/components/auto_complete_field/auto_complete_field.dart",
+      "generatedAt": "2025-08-21T09:47:34.767313",
+      "properties": [
+        {
+          "name": "options",
+          "type": "List<String>",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "labelText",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "hintText",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": "'Input'"
+        },
+        {
+          "name": "onSelected",
+          "type": "ValueChanged<String?>",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "initialValue",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        },
+        {
+          "name": "enabled",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "true"
+        },
+        {
+          "name": "showDropdown",
+          "type": "bool",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "false"
+        }
+      ],
+      "description": "AutoComplite/Default/True"
+    },
+    "user_info": {
+      "name": "user_info",
+      "figmaIds": [
+        "40000102:238"
+      ],
+      "filePath": "lib/generated/components/user_info/user_info.dart",
+      "generatedAt": "2025-08-21T09:47:47.852798",
+      "properties": [
+        {
+          "name": "userName",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "userInitials",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "roleText",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "statusText",
+          "type": "String",
+          "isRequired": true,
+          "isNullable": false,
+          "defaultValue": null
+        },
+        {
+          "name": "badgeStatus",
+          "type": "BadgeStatus",
+          "isRequired": false,
+          "isNullable": false,
+          "defaultValue": "BadgeStatus.success"
+        },
+        {
+          "name": "avatarImage",
+          "type": "String",
+          "isRequired": false,
+          "isNullable": true,
+          "defaultValue": null
+        }
+      ],
+      "description": "User Info"
+    }
+  },
+  "idToComponentMap": {
+    "452:6145": "dropdown_basic_inline",
+    "645:5573": "search_input",
+    "310:8104": "search_input",
+    "647:28280": "search_input",
+    "2233:30826": "tab_item",
+    "2233:30818": "tab_item",
+    "2233:30822": "tab_item",
+    "453:22311": "dropdown_menu_item",
+    "313:8474": "custom_radio",
+    "313:8490": "custom_radio",
+    "2201:5742": "default_pagination",
+    "639:24822": "float_button",
+    "315:8187": "custom_switch",
+    "639:23949": "custom_switch",
+    "315:8654": "custom_switch",
+    "315:8188": "custom_switch",
+    "674:6659": "badge_text",
+    "713:13285": "primary_button",
+    "673:6153": "tag",
+    "673:6143": "tag",
+    "673:6142": "tag",
+    "1002:172585": "avatar",
+    "1002:172589": "avatar",
+    "1002:172591": "avatar",
+    "311:8277": "custom_checkbox",
+    "311:8276": "custom_checkbox",
+    "648:7318": "custom_autocomplete_field",
+    "468:35072": "auto_complete_field",
+    "40000102:238": "user_info"
+  },
+  "exampleScreens": {
+    "mobile_example": {
+      "name": "mobile_example",
+      "figmaId": "40000070:4567",
+      "filePath": "lib/generated/screens/mobile_example/mobile_example.dart",
+      "generatedAt": "2025-08-21T09:55:45.535511",
+      "usedComponents": [
+        "dropdown_basic_inline",
+        "tab_item",
+        "tab_item",
+        "user_info",
+        "auto_complete_field",
+        "custom_autocomplete_field",
+        "tag",
+        "custom_switch",
+        "custom_checkbox",
+        "primary_button"
+      ],
+      "description": ""
+    }
+  },
+  "colorVariableMapping": {
+    "VariableID:784:8502": "fillColorFillContent",
+    "VariableID:784:8503": "fillColorFillAlter",
+    "VariableID:784:8504": "backgroundColorBgContainerDisabled",
+    "VariableID:784:8505": "textColorTextPlaceholder",
+    "VariableID:784:8506": "textColorTextDisabled",
+    "VariableID:784:8507": "textColorTextHeading",
+    "VariableID:784:8508": "textColorTextDescription",
+    "VariableID:784:8509": "backgroundColorBgTextHover",
+    "VariableID:784:8515": "textColorText",
+    "VariableID:784:8516": "textColorTextQuaternary",
+    "VariableID:784:8517": "fillColorFill",
+    "VariableID:784:8518": "fillColorFillSecondary",
+    "VariableID:784:8519": "fillColorFillTertiary",
+    "VariableID:784:8520": "backgroundColorBgContainer",
+    "VariableID:784:8521": "backgroundColorBgLayout",
+    "VariableID:784:8522": "backgroundColorBgElevated",
+    "VariableID:784:8523": "borderColorBorder",
+    "VariableID:784:8524": "borderColorBorderSecondary",
+    "VariableID:784:8525": "borderColorSplit",
+    "VariableID:784:8526": "primaryColorPrimaryBg",
+    "VariableID:784:8527": "primaryColorPrimaryBorder",
+    "VariableID:784:8528": "primaryColorPrimaryBorderHover",
+    "VariableID:784:8529": "primaryColorPrimaryHover",
+    "VariableID:784:8530": "primaryColorPrimary",
+    "VariableID:784:8531": "primaryColorPrimaryActive",
+    "VariableID:784:8532": "primaryColorPrimaryTextHover",
+    "VariableID:784:8533": "primaryColorPrimaryText",
+    "VariableID:784:8534": "primaryColorPrimaryTextActive",
+    "VariableID:784:8535": "successColorSuccessBg",
+    "VariableID:784:8536": "successColorSuccessBgHover",
+    "VariableID:784:8537": "successColorSuccessBorder",
+    "VariableID:784:8538": "successColorSuccessBorderHover",
+    "VariableID:784:8539": "successColorSuccessHover",
+    "VariableID:784:8540": "successColorSuccess",
+    "VariableID:784:8541": "successColorSuccessActive",
+    "VariableID:784:8542": "successColorSuccessTextHover",
+    "VariableID:784:8543": "successColorSuccessText",
+    "VariableID:784:8544": "successColorSuccessTextActive",
+    "VariableID:784:8545": "warningColorWarningBg",
+    "VariableID:784:8546": "warningColorWarningBgHover",
+    "VariableID:784:8547": "warningColorWarningBorder",
+    "VariableID:784:8548": "warningColorWarningBorderHover",
+    "VariableID:784:8549": "warningColorWarningHover",
+    "VariableID:784:8550": "warningColorWarning",
+    "VariableID:784:8551": "warningColorWarningActive",
+    "VariableID:784:8552": "warningColorWarningTextHover",
+    "VariableID:784:8553": "warningColorWarningText",
+    "VariableID:784:8554": "warningColorWarningTextActive",
+    "VariableID:784:8555": "errorColorErrorBg",
+    "VariableID:784:8556": "errorColorErrorBgHover",
+    "VariableID:784:8557": "errorColorErrorBorder",
+    "VariableID:784:8558": "errorColorErrorBorderHover",
+    "VariableID:784:8559": "errorColorErrorHover",
+    "VariableID:784:8560": "errorColorError",
+    "VariableID:784:8561": "errorColorErrorActive",
+    "VariableID:784:8562": "errorColorErrorTextHover",
+    "VariableID:784:8563": "errorColorErrorText",
+    "VariableID:784:8564": "errorColorErrorTextActive",
+    "VariableID:784:8565": "backgroundColorBgMask",
+    "VariableID:784:8566": "textColorTextBase",
+    "VariableID:784:8567": "textColorTextLightSolid",
+    "VariableID:784:8568": "backgroundColorBgBase",
+    "VariableID:785:8120": "backgroundColorBgSpotlight",
+    "VariableID:785:8121": "fillColorFillQuaternary",
+    "VariableID:785:8122": "textColorTextSecondary",
+    "VariableID:785:8123": "textColorTextTertiary",
+    "VariableID:785:8124": "colorLink",
+    "VariableID:785:8125": "colorLinkHover",
+    "VariableID:785:8126": "colorLinkActive",
+    "VariableID:785:8128": "primaryColorPrimaryBgHover",
+    "VariableID:785:9929": "colorIcon",
+    "VariableID:785:9930": "colorIconHover",
+    "VariableID:787:7904": "backgroundColorBgTextActive",
+    "VariableID:2567:27343": "secondaryColorSecondaryTextActive",
+    "VariableID:2567:27344": "secondaryColorSecondaryText",
+    "VariableID:2567:27345": "secondaryColorSecondaryTextHover",
+    "VariableID:2567:27346": "secondaryColorSecondaryActive",
+    "VariableID:2567:27347": "secondaryColorSecondary",
+    "VariableID:2567:27348": "secondaryColorSecondaryHover",
+    "VariableID:2567:27349": "secondaryColorPrimaryBorderHover",
+    "VariableID:2567:27350": "secondaryColorSecondaryBorder",
+    "VariableID:2567:27351": "secondaryColorSecondaryBgHover",
+    "VariableID:2567:27352": "secondaryColorSecondaryBg",
+    "VariableID:7531:78596": "iconColorIcon",
+    "VariableID:7531:78597": "iconColorIconHover",
+    "VariableID:7531:81576": "linkColorLink",
+    "VariableID:7531:81589": "linkColorLinkHover",
+    "VariableID:7531:81590": "linkColorLinkActive"
+  },
+  "colorSchemaInfo": {
+    "appColorsPath": "lib/generated/theme/app_colors.dart",
+    "customColorsPath": "lib/generated/theme/color_theme.dart",
+    "generatedAt": "2025-08-21T09:39:24.548426",
+    "totalVariables": 88,
+    "availableModes": [
+      "Light",
+      "Dark"
+    ],
+    "description": "Generated from Figma color variables with 88 mapped fields"
+  },
+  "lastUpdated": "2025-08-21T09:55:56.931162",
+  "version": "1.1"
+}
