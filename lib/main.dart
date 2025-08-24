@@ -1,5 +1,8 @@
 import 'package:figma_to_code_light/design_system/theme/app_theme.dart';
 import 'package:figma_to_code_light/finalresults/screen25.dart';
+import 'package:figma_to_code_light/finalresults/screen26.dart';
+import 'package:figma_to_code_light/finalresults/screen27.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
